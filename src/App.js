@@ -18,15 +18,10 @@ import Wage from './components/statics/png/Wage.png';
 import wallet from './components/statics/png/wallet.png';
 import profile from './components/statics/png/profile.png';
 import Menu_icon from './components/statics/svg/Menu_icon.js';
-
-
-
-
-import {useState} from "react";
-
+import React,{useState}from 'react';
 
 function App() {
-  const [state , setstate] = useState ("false");
+  const [state, setstate] = useState(false)
 
   return (
     <div className="container">
@@ -34,8 +29,15 @@ function App() {
   <div className="main-navbar">
   <div className="main-navbar-container">
 
+
+
+<div onClick={()=>setstate(prevstate=> !prevstate)}>
 <Menu_icon/>
-<div className="container-menu-hide">
+</div>
+
+
+
+{state && <div className="container-menu-hide">
 <div className="row-1-menu-hide">
 <div className="container-order">
 <img width="70px" src={order} />
@@ -119,8 +121,7 @@ function App() {
 </div>
 
 </div>
-
-</div>
+</div>}
     <button className="btn-login">ورود</button>
   </div>
   </div>
