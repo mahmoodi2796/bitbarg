@@ -120,7 +120,7 @@ export default function Header() {
 
 </div>
 </div>}
-    <button className="btn-login">ورود</button>
+   <a href="/login"><button className="btn-login">ورود</button></a> 
   </div>
   </div>
 </header>
