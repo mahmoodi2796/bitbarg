@@ -84,3 +84,25 @@
     padding: 3px;
     color: rgba(0,0,0,.6);
 }
+@media screen and (max-width: 767px) {
+
+    .cart-login {
+        box-shadow: 0 2px 7px 0 rgb(0 0 0 / 0%);
+
+    }
+    .input-login {
+        padding: 6.5px 68.5px;
+    }
+    .cont-input {
+        width: 308px;
+        height: 36px;
+    }
+    .cont-btn-ligin {
+        width: 308px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .cart-login {
+        padding: 0px 25px 50px 25px;
+    }
+}
