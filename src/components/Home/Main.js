@@ -1,6 +1,5 @@
 import "./Main.css"
 import logo from '../statics/svg/bitbarg.svg';
-import support from '../statics/png/support.png';
 
 import React from 'react'
 export default function Main() {
@@ -32,12 +31,11 @@ export default function Main() {
   </div>
 </div>
 <div className="container-time-work">
-  <h2 class="time-work-1"> روز هفته ، ۲۴ ساعت شبانه<span>۷</span>روز</h2>
+  <h2 class="time-work-1"><div className="" style={{position:"absolute" , top : 0}}></div> روز هفته ، ۲۴ ساعت شبانه<span>۷</span>روز</h2>
 <h2 class="time-work-2">در خدمت شما هستیم</h2>
 <a class="number-phone" href="tel:02191079677">۹۱۰۷۹۶۷۷</a>
 </div>
 </div>
-<div className="container-support-fix"><img className="image-support-fix" src={support}/></div>
 
         </div>
     )
