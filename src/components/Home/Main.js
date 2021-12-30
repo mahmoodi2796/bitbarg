@@ -31,7 +31,7 @@ export default function Main() {
   </div>
 </div>
 <div className="container-time-work">
-  <h2 class="time-work-1"><div className="" style={{position:"absolute" , top : 0}}></div> روز هفته ، ۲۴ ساعت شبانه<span>۷</span>روز</h2>
+  <h2 class="time-work-1"><div className="transform-text" style={{position:"absolute" , top : 0}}></div> روز هفته ، ۲۴ ساعت شبانه<span>۷</span>روز</h2>
 <h2 class="time-work-2">در خدمت شما هستیم</h2>
 <a class="number-phone" href="tel:02191079677">۹۱۰۷۹۶۷۷</a>
 </div>

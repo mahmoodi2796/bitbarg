@@ -24,58 +24,21 @@
     padding: 0 2px 0 0;
   
   }
-  @keyframe flash {
-    0% {
-      transform: translate(0px, 0px);
-      animation-timing-function:ease-in-out
-  }
   
-  50% {
-      transform: translate(0px, 120px);
-      animation-timing-function:ease-in-out
-  }
-  
-  100% {
-      transform: translate(0px, 0px);
-      animation-timing-function:ease-in-out
-  }
-  }
-  
-  
-  
-  .transform-text {
-    width: 20px;
-    height: 120px;
-    background-color: white;
-    /* filter : blur(5px); */
-    animation: blinker 6s infinite ;
-    opacity: 70%;
-    
-  }
-  
-  @keyframes blinker {
-    0% {
-      transform: translate(-40px, 0px) ;
-    }
-    80% {
-      transform: translate(-40px, 0px) ;
-    }
-    100% {
-      transform: translate(190px, 0px) ;
-    }
-  }
   .left{
     position: relative;
   }
   .absolute-select-curency{
     position: absolute;
-  }.inputs-main {
+  }
+  .inputs-main {
     border: 1px solid #aaa;
     border-radius: 4px;
     background-color: #fff;
-    padding: 11px 33px;
+    padding: 5% 2.1rem;
     margin-top: -4px;
-  }.absolute-select-curency {
+}
+.absolute-select-curency {
     position: absolute;
     top: -15px;
     left: 15px;
@@ -186,4 +149,53 @@
             left: 15px;
             bottom: 26px;
             position: fixed;
+          }
+          @media screen and (max-width: 1200px) {
+            .inputs-main {
+                padding: 6% 1rem;
+            }
+          }
+          @media screen and (max-width: 990px){
+          .inputs-main {
+              padding: 5.2% 1.4rem;
+          }}
+          @media screen and (max-width: 768px) {
+            .container-main {
+              margin-top: 45px;
+          }
+          .logo-mid-bitbarg {
+            width: 200px;
+            margin-bottom: 9px;
+          }
+          .inputs-main {
+            padding: 11px 0px;
+          }
+          }
+          @media screen and (max-width: 576px) {
+            .container-main {
+              margin-top: 45px;
+          }
+          .logo-mid-bitbarg {
+            width: 200px;
+            margin-bottom: 9px;
+          }
+          .inputs-main {
+            padding: 11px 17px;
+          }
+          .btn-buy {
+            margin: 9px 4px;
+          }
+          .btn-sell {
+            margin: 9px 4px;
+          }
+          .time-work-1 {
+            margin-top: 11px;
+          }
+          .inputs-main {
+            padding: 11px 3%;
+          }
+          .parent-inputs {
+            padding: 0px 10.8px 0 0;
+        }
+          
           }

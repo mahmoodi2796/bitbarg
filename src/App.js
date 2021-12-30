@@ -20,7 +20,8 @@ function App() {
         <Route path="/login" element={<Login />} />
 
       </Routes>
-<div className="container-support-fix"><img className="image-support-fix" src={support}/></div>
+<div className="container-support-fix"><img className="image-support-fix" src={support}/>
+</div>
 
     </div>
   );

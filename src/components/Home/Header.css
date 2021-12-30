@@ -54,3 +54,16 @@
     outline: none;
     margin-top: -9px;
   }
+  .parent-btn-login{
+    margin-top: -5px;
+  }
+  @media screen and (max-width: 786px) {
+    .main-navbar {
+      padding: 15px 10px;
+  }
+  
+  }
+  @media screen and (max-width: 576px) {
+    .btn-login {
+      padding: 7.5px 21px;
+    }}
