@@ -199,3 +199,31 @@
         }
           
           }
+          @media screen and (max-width: 380px) {
+            .container-main {
+              margin-top: 45px;
+          }
+          .logo-mid-bitbarg {
+            width: 200px;
+            margin-bottom: 9px;
+          }
+          .inputs-main {
+            padding: 11px 17px;
+          }
+          .btn-buy {
+            margin: 9px 4px;
+          }
+          .btn-sell {
+            margin: 9px 4px;
+          }
+          .time-work-1 {
+            margin-top: 11px;
+          }
+          .inputs-main {
+            padding: 11px 3%;
+          }
+          .parent-inputs {
+            padding: 0px 3px 0 0;
+        }
+          
+          }
