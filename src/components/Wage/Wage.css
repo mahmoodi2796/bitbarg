@@ -1,0 +1,28 @@
+.bitheader-header {
+    width: 72px;
+    margin-top: 6px;
+}
+.main-navbar-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    margin-top: -5px;
+}
+.main-navbar {
+    padding: 25px 30px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0px;
+    justify-content: end;
+}
+.title-blue-header-text {
+    padding: 14px 20px;
+    margin-top: 15px;
+    background: #3590ff;
+    direction: rtl;
+    color: white;
+    font-weight: 100;
+    font-size: 18px;
+}
