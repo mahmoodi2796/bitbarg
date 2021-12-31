@@ -2,10 +2,15 @@ import React from 'react'
 import "./Authentication.css"
 import Bitbarglogo from "../statics/svg/Bitbarglogo.svg"
 import Exclamation from "../statics/svg/kyc-state-3.svg"
+import Header from '../Home/Header';
+
 
 export default function Login() {
     return (
+        
         <div className="container-login">
+<Header/>
+
             <div className="cart-login">
                 <div className="container-image-cart-login">
                     <img className="Bitbarglogo" src={Bitbarglogo}/>
@@ -21,4 +26,5 @@ export default function Login() {
         </div>
     )
 }
+
 

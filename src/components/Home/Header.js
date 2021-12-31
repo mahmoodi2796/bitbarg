@@ -75,10 +75,10 @@ export default function Header() {
 <img width="70px" src={Notifications} />
     <div>به من اطلاع بده!</div>
 </div>
-<div className="container-Wage">
+<a href="/Wage"><div className="container-Wage">
 <img width="70px" src={Wage} />
     <div>کارمزد ها</div>
-</div>
+</div></a>
 </div>
 <div className="row-4-menu-hide">
 <div className="container-DirectionWage">
