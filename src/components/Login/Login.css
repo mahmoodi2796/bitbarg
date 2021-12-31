@@ -105,4 +105,7 @@
     .cart-login {
         padding: 0px 25px 50px 25px;
     }
+    .container-input-login{
+        width: 95%;
+    }
 }
