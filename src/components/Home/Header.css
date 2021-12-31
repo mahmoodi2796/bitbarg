@@ -67,3 +67,8 @@
     .btn-login {
       padding: 7.5px 21px;
     }}
+    a{
+      color: black;
+      font-size: 12px;
+      text-decoration: none;
+    }

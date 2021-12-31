@@ -46,10 +46,10 @@
     transform: translate(190px, 0px) ;
   }
 }
-#icon-menu{
+#icon-menu {
   margin-top: -3px;
-    margin-right: 7px;
-    color: gray;
+  margin-right: 5px;
+  color: gray;
 }
 @media screen and (max-width: 576px) {
   .container-support-fix {

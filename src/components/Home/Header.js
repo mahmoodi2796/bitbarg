@@ -37,18 +37,18 @@ export default function Header() {
 
 {state && <div className="container-menu-hide">
 <div className="row-1-menu-hide">
-<div className="container-order">
+<a href="/login"><div className="container-order">
 <img width="70px" src={order} />
     <div>سفارشات</div>
-</div>
-<div className="container-profile">
+</div></a>
+<a href="/login"><div className="container-profile">
 <img width="70px" src={profile} />
     <div>پروفایل</div>
-</div> 
-<div className="container-home">
+</div> </a>
+<a href="/"><div className="container-home">
 <img width="70px" src={home} />
     <div>خانه</div>
-</div>
+</div></a>
 </div>
 <div className="row-2-menu-hide">
 <div className="container-price">
@@ -60,10 +60,10 @@ export default function Header() {
 <img width="70px" src={bitgap} />
     <div>بیت گپ</div>
 </div>
-<div className="container-Identity">
+<a href="Authentication"><div className="container-Identity">
 <img width="70px" src={Identity} />
     <div>احراز هویت</div>
-</div>
+</div></a>
    
 </div>
 <div className="row-3-menu-hide">

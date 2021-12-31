@@ -1,0 +1,146 @@
+.cart-login{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 25px 50px 25px;
+    width: 400px;
+    height: 346px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 7px 0 rgb(0 0 0 / 16%);
+    margin-top: -9px;
+}
+.text-Authentication {
+    margin-bottom: 1rem;
+    color: orange;
+    margin-top: 19px;
+    text-align: center;
+    font-size: 14px;
+    direction: rtl;
+    font-weight: 600;
+}
+.container-inputs-login-Authentication {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    margin-right: 20px;
+}
+.container-inputs-login-Authentication {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17px;
+    margin-right: 20px;
+}
+.caption-Authentication {
+    font-size: 12px;
+    color: #807c7c;
+    margin-bottom: 1rem;
+    margin-top: 20px;
+}
+.cont-btn-ligin {
+    width: 272px;
+    height: 36px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 23px;
+}
+.btn-Authentication {
+    color: #fff!important;
+    font-size: 12px;
+    padding: 7px 11.5px;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    background: #2585ff!important;
+    border-color: #2585ff!important;
+    border: 1px solid;
+    outline: none;
+    margin-top: -9px;
+    width: 100%;
+    letter-spacing: 0px;
+    font-weight: 600;
+    outline: none;
+    margin-top: -5px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 18%);
+}
+.cont-input{
+    width: 272px;
+    height: 36px;
+}
+.input-login {
+    font-size: 16px;
+    padding: 6.5px 50.5px;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    outline: none;
+    margin-top: -9px;
+    text-align: center;
+    border: 1px solid #aaa;
+}
+::placeholder {
+    color: rgba(97, 96, 96, 0.6);
+}
+.cont-input{
+    position: relative;
+
+}
+.absolute-input-log-in {
+    position: absolute;
+    top: -18px;
+    right: -1px;
+    font-size: 9.8px;
+    background-color: #fff;
+    padding: 3px;
+    color: rgba(0,0,0,.6);
+}
+.Bitbarglogo {
+    width: 18%;
+}
+.container-image-cart-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Exclamation {
+    width: 37.5%;
+    margin-top: 8px;
+}
+@media screen and (max-width: 767px) {
+
+    .cart-login {
+        box-shadow: 0 2px 7px 0 rgb(0 0 0 / 0%);
+
+    }
+    .container-inputs-login-Authentication {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -4px;
+        margin-right: 20px;
+    }
+    .input-login {
+        padding: 6.5px 68.5px;
+    }
+    .cont-input {
+        width: 308px;
+        height: 36px;
+    }
+    .cont-btn-ligin {
+        width: 308px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .cart-login {
+        padding: 0px 25px 50px 25px;
+    }
+    .container-input-login{
+        width: 95%;
+    }
+}
