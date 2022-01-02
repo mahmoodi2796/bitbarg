@@ -1,28 +1,104 @@
 .bitheader-header {
-    width: 72px;
-    margin-top: 6px;
+  width: 72px;
+  margin-top: 6px;
 }
 .main-navbar-container {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    width: 100%;
-    margin-top: -5px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  margin-top: -5px;
 }
 .main-navbar {
-    padding: 25px 30px;
-    text-align: right;
-    display: flex;
-    align-items: center;
-    padding-bottom: 0px;
-    justify-content: end;
+  padding: 25px 30px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  padding-bottom: 0px;
+  justify-content: end;
 }
 .title-blue-header-text {
-    padding: 14px 20px;
-    margin-top: 15px;
-    background: #3590ff;
-    direction: rtl;
-    color: white;
-    font-weight: 100;
-    font-size: 18px;
+  padding: 14px 20px;
+  margin-top: 15px;
+  background: #3590ff;
+  direction: rtl;
+  color: white;
+  font-weight: 100;
+  font-size: 18px;
+}
+.parent-container-list-wage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -12px;
+}
+.container-list-wage {
+  position: relative;
+  margin-top: 1rem;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  width: 100%;
+  height: 1000px;
+  max-width: 1265px;
+}
+.container-inputs-search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin: 10px 10px 0px 10px;
+}
+.btn-search {
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 14px;
+  padding-top: 7px;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0 10px;
+  border-radius: 5px;
+  background: #2585ff;
+  border-color: #2585ff;
+  border: 1px solid;
+  outline: none;
+  position: relative;
+}
+.container-input-search {
+  box-sizing: border-box;
+  min-width: 0;
+  display: inline-flex;
+  position: relative;
+  height: 32px;
+  align-items: center;
+  line-height: 1.6;
+  border: 1px solid #e6e8ea;
+  border-radius: 4px;
+  padding-left: 40px;
+  margin: 0;
+  width: 245px;
+}
+.input-search {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.43;
+  font-size: 11px;
+  outline: 0;
+  border: 0;
+  font-weight: bolder;
+  color: #afafaf;
+  width: 100%;
+}
+.Searchicon {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  color: #848e9c;
+  font-size: 22px;
+  fill: #848e9c;
+  vertical-align: middle;
+  width: 1em;
+  margin-left: -28px;
+  height: 1em;
 }

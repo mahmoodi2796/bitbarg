@@ -1,6 +1,7 @@
 import React from "react";
 import "./Wage.css";
 import Headericon from "../Home/Headericon.js";
+import Searchicon from "../statics/svg/searchicon";
 
 const rows = [
   {
@@ -21,12 +22,27 @@ export default function Wage() {
       <div className="title-blue-header">
         <h1 className="title-blue-header-text">کارمزد ارزهای دیجیتال</h1>
 
-        {rows.map((row, index) => (
+        {/* {rows.map((row, index) => (
           <div key={index}>
             <div>{row.name}</div> <div>{row.value}</div>
             <img src={row.icon} />
           </div>
-        ))}
+        ))} */}
+      </div>
+      <div className="parent-container-list-wage">
+        <div className="container-list-wage">
+          <div className="container-inputs-search">
+            <button className="btn-search">جستجو</button>
+            <div className="container-input-search">
+              <input
+                className="input-search"
+                type="search"
+                placeholder="جستجو بر اساس نام و یا نماد اختصاری"
+              />
+              <Searchicon />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
