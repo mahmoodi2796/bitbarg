@@ -42,6 +42,51 @@ export default function Wage() {
               <Searchicon />
             </div>
           </div>
+          <p className="p-warning-wage">
+            کارمزد های خرید همان کارمزد شبکه میباشد که توسط شبکه تعیین میشود و
+            بیت برگ هیچ منفعتی در این امر ندارد لازم به ذکر است مرجع تعیین قیمت
+            کارمزدها صرافی بین المللی بایننس است
+            <p className="p-2-warning-wage">:توجه</p>
+          </p>
+
+          <div class="css-1wy2bti">
+            <div data-area="left" class="css-1l4iui8 name-td">
+              <div class="css-lkqrqt">
+                <div data-bn-type="text" title="Last Price" class="css-1i04fkn">
+                  کارمزد فروش
+                </div>
+              </div>
+            </div>
+            <div data-area="left" class="css-1l4iui8 buy-price-td">
+              <div class="css-lkqrqt">
+                <div
+                  data-bn-type="text"
+                  title="Last Price"
+                  class="css-1i04fkn wage-buy"
+                >
+                  کارمزد خرید
+                </div>
+              </div>
+            </div>
+            <div data-area="left" class="css-1l4iui8 sell-price-td">
+              <div class="css-lkqrqt">
+                <div
+                  data-bn-type="text"
+                  title="Pair"
+                  class="css-1i04fkn name-corency-in-list-wage"
+                >
+                  ارز دیجیتال
+                </div>
+              </div>
+            </div>
+            <div data-area="left" class="css-1l4iui8 number-td">
+              <div class="css-lkqrqt">
+                <div data-bn-type="text" title="Pair" class="css-1i04fkn">
+                  #
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

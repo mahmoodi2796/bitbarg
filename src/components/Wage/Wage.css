@@ -102,3 +102,86 @@
   margin-left: -28px;
   height: 1em;
 }
+.warning-wage {
+  font-size: 13px;
+  text-align: end;
+}
+.p-warning-wage {
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 6px;
+  margin-right: 10px;
+  color: #8c8686;
+}
+
+.p-2-warning-wage {
+  font-size: 12px;
+  color: #2485ff;
+  border-bottom: 1px dashed;
+  margin-left: 2px;
+}
+.css-1wy2bti {
+  margin: 0;
+  min-width: 0;
+  display: flex;
+  padding-left: 0;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  border-color: #eaecef;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #fafafa;
+  margin-top: -15px;
+}
+.number-td {
+  max-width: 8%;
+  flex: 0 1 8%;
+  text-align: center;
+  color: #afafaf;
+}
+.css-1i04fkn {
+  font-size: 12px;
+  transition: 0.4s;
+}
+.css-1i04fkn {
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  line-height: 16px;
+}
+.css-1l4iui8 {
+  padding-right: 36px;
+}
+.name-td {
+  max-width: 36%;
+  flex: 1 1 45%;
+  display: flex;
+  align-items: center;
+  margin-left: 103px;
+}
+.css-1i04fkn {
+  font-size: 12px;
+  transition: 0.4s;
+}
+.buy-price-td {
+  max-width: 38%;
+  flex: 1 1 30%;
+}
+.sell-price-td {
+  text-align: center;
+}
+.sell-price-td {
+  max-width: 20%;
+  flex: 1 1 20%;
+}
+.wage-buy {
+  margin-left: 102px;
+}
+.name-corency-in-list-wage {
+  width: 472px;
+}
+.css-1i04fkn {
+  margin-left: 46px;
+}
