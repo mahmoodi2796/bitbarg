@@ -1,9 +1,6 @@
-body {
-  background-color: #f2f7f7;
-}
 .title-blue-header-text {
   padding: 14px 20px;
-  margin-top: 15px;
+  margin-top: 0px;
   background: #3590ff;
   direction: rtl;
   color: white;
@@ -146,6 +143,7 @@ body {
   text-align: center;
   background-color: #fff;
   margin: 0 !important;
+  width: 93.5%;
 }
 .input-ui {
   direction: ltr;

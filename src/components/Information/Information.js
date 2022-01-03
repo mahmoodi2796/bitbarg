@@ -4,7 +4,7 @@ import Headericon from "../Home/Headericon.js";
 
 export default function Information() {
   return (
-    <>
+    <div style={{ background: "#f2f7f7" }}>
       <Headericon />
       <div className="title-blue-header">
         <h1 className="title-blue-header-text">بمن اطلاع بده!</h1>
@@ -84,6 +84,6 @@ export default function Information() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
