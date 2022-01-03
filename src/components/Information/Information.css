@@ -1,0 +1,221 @@
+body {
+  background-color: #f2f7f7;
+}
+.title-blue-header-text {
+  padding: 14px 20px;
+  margin-top: 15px;
+  background: #3590ff;
+  direction: rtl;
+  color: white;
+  font-weight: 100;
+  font-size: 18px;
+}
+.parent-container-page-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-page-information {
+  margin: 4px 0px 10px 0px;
+  padding: 15px;
+  width: 1220px;
+  height: 717px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+}
+.container-content-container-page-information {
+  max-width: 450px;
+  margin-right: auto;
+  margin: 0px auto;
+}
+.container-image-clock-page-information {
+  margin-top: 15px;
+  width: 100%;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+}
+.text-sevice-page-information {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 8px;
+  font-weight: 500;
+}
+.service-massage {
+  margin-top: 16px;
+  font-weight: 100;
+  text-align: end;
+  font-size: 13px;
+  word-spacing: 1px;
+  color: #585043;
+}
+.col-lg-6 {
+  padding-right: 7px;
+}
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.notify-currency-select {
+  outline: none;
+  height: 45px;
+  display: block;
+  width: 97%;
+  padding: 6px 12px;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.dropdown-toggle {
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 2px;
+  font-size: 12px;
+  font-weight: 100;
+}
+.dropdown[data-v-779925ba] {
+  background: #fff;
+}
+.dropdown[data-v-779925ba] {
+  background: transparent;
+  direction: rtl;
+  width: 94%;
+  height: 85%;
+  top: 0;
+  left: 0;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown[data-v-779925ba] label {
+  position: absolute;
+  left: 7px;
+  top: -8px;
+  font-size: 10px;
+  background: #fff;
+  padding: 0 3px;
+}
+.dropdown[data-v-779925ba] label {
+  color: #616161;
+}
+#update-icon {
+  display: flex;
+}
+#update-icon svg {
+  height: 20px;
+  width: 20px;
+}
+.relativ {
+  position: relative;
+}
+.container-inputs-page0information {
+  width: 100%;
+  display: flex;
+}
+.row {
+  margin-top: 1rem;
+}
+.input-ui {
+  margin: 0 0px;
+}
+.row {
+  display: flex;
+}
+.text-field--group {
+  position: relative;
+}
+.text-field--group input,
+.text-field--group textarea {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #fff;
+  margin: 0 !important;
+}
+.input-ui {
+  direction: ltr;
+  padding: 9px 3px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e2;
+  font-size: 14px;
+  line-height: 24px;
+  width: 96%;
+  color: #030a16;
+  margin-top: 1rem;
+  outline: none;
+  background-color: rgba(3, 169, 244, 0.028);
+}
+.absolute-inputs-page-information {
+  position: absolute;
+  left: 7px;
+  top: -8px;
+  font-size: 10px;
+  background: #fff;
+  padding: 0 3px;
+}
+#factor-loading {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.container-btn-page-information {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 37px;
+}
+.btn-loading {
+  padding: 8px 13px 10px;
+  height: 36px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 18%);
+}
+@media (min-width: 992px) {
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 767px) {
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .container-content-container-page-information {
+    width: 50%;
+    margin-right: auto;
+    margin: 0px auto;
+  }
+}
+@media (min-width: 576px) {
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .container-content-container-page-information {
+    width: 50%;
+    margin-right: auto;
+    margin: 0px auto;
+  }
+}
+@media (min-width: 500px) {
+  .container-content-container-page-information {
+    width: 50%;
+    margin-right: auto;
+    margin: 0px auto;
+  }
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Wage.css";
 import Headericon from "../Home/Headericon.js";
 import Searchicon from "../statics/svg/searchicon";
@@ -7,6 +7,7 @@ const rows = [
   {
     id: 0,
     namef: "بیت کویین",
+    coin: "btc",
     name: "Bitcoin - BTC",
     numbercurenct: "1",
     networkOne: "Bitcoin",
@@ -91,7 +92,7 @@ const rows = [
     icon: "	https://abantether.com/eapi/assets/coins/luna.svg",
   },
   {
-    id: 6,
+    id: 7,
     namef: "پولکادات ",
     name: "Polkadot - DOT",
     networkOne: "Bitcoin",
@@ -104,7 +105,7 @@ const rows = [
     icon: "	  https://abantether.com/eapi/assets/coins/dot.svg",
   },
   {
-    id: 6,
+    id: 8,
     namef: "سندباکس ",
     name: "The Sandbox - SAND",
     networkOne: "Bitcoin",
@@ -117,7 +118,7 @@ const rows = [
     icon: "https://cdn.bitimen.com/media/asset/logo/md/03331d31_5407_211227171523.png",
   },
   {
-    id: 6,
+    id: 9,
     namef: "آوالانچ ",
     name: "Avalanche - AVAX",
     networkOne: "Bitcoin",
@@ -129,7 +130,7 @@ const rows = [
     icon: "https://abantether.com/eapi/assets/coins/avax.png",
   },
   {
-    id: 6,
+    id: 10,
     namef: "ترون",
     name: "Tron - TRX",
     networkOne: "Bitcoin",
@@ -141,7 +142,7 @@ const rows = [
     icon: "	https://cdn.bitimen.com/media/asset/logo/md/40b665bd_2910_210301061731.png",
   },
   {
-    id: 6,
+    id: 11,
     namef: "مَتیک ",
     name: "MATIC - MATIC",
     networkOne: "Bitcoin",
@@ -153,7 +154,7 @@ const rows = [
     icon: "https://abantether.com/eapi/assets/coins/matic.png",
   },
   {
-    id: 6,
+    id: 12,
     namef: "سولانا ",
     name: "Solana - SOL",
     networkOne: "Bitcoin",
@@ -165,7 +166,7 @@ const rows = [
     icon: "https://abantether.com/eapi/assets/coins/sol.svg",
   },
   {
-    id: 6,
+    id: 13,
     namef: "شیبا ",
     name: "SHIBA INU - SHIB",
     networkOne: "Bitcoin",
@@ -177,7 +178,7 @@ const rows = [
     icon: "  https://abantether.com/eapi/assets/coins/shib.png",
   },
   {
-    id: 6,
+    id: 14,
     namef: "اوآیسیس نتورک ",
     name: "Oasis Network - ROSE",
     networkOne: "Bitcoin",
@@ -189,7 +190,7 @@ const rows = [
     icon: "	https://abantether.com/eapi/assets/coins/rose.png",
   },
   {
-    id: 6,
+    id: 15,
     namef: "ریپل ",
     name: "Ripple - XRP",
     networkOne: "Bitcoin",
@@ -201,7 +202,7 @@ const rows = [
     icon: "  https://abantether.com/eapi/assets/coins/xrp.svg",
   },
   {
-    id: 6,
+    id: 16,
     namef: "گالا ",
     name: "Gala - GALA",
     networkOne: "Bitcoin",
@@ -213,7 +214,7 @@ const rows = [
     icon: "	https://abantether.com/eapi/assets/coins/gala.png",
   },
   {
-    id: 6,
+    id: 17,
     namef: "کاردانو ",
     name: "Cardano - ADA",
     networkOne: "Bitcoin",
@@ -225,7 +226,7 @@ const rows = [
     icon: "		https://cdn.bitimen.com/media/asset/logo/md/c4fc6fe0_3983_210426150916.png",
   },
   {
-    id: 6,
+    id: 18,
     namef: "هارمونی  ",
     name: "Harmony - ONE",
     networkOne: "Bitcoin",
@@ -237,7 +238,7 @@ const rows = [
     icon: "	https://abantether.com/eapi/assets/coins/one.png",
   },
   {
-    id: 6,
+    id: 19,
     namef: "یرن فایننس ",
     name: "yearn.finance - YFI",
     networkOne: "Bitcoin",
@@ -249,7 +250,7 @@ const rows = [
     icon: "	https://abantether.com/eapi/assets/coins/yfi.svg",
   },
   {
-    id: 6,
+    id: 20,
     namef: "کرومیا ",
     name: "Chromia - CHR",
     networkOne: "Bitcoin",
@@ -261,7 +262,7 @@ const rows = [
     icon: "https://abantether.com/eapi/assets/coins/chr.png",
   },
   {
-    id: 6,
+    id: 21,
     namef: "نیر پروتکل  ",
     name: "NEAR Protocol - NEAR",
     networkOne: "Bitcoin",
@@ -273,7 +274,7 @@ const rows = [
     icon: "https://abantether.com/eapi/assets/coins/near.png",
   },
   {
-    id: 6,
+    id: 22,
     namef: "اینترنت کامپیوتر  ",
     name: "Internet Computer - ICP",
     networkOne: "Bitcoin",
@@ -285,7 +286,7 @@ const rows = [
     icon: "https://abantether.com/eapi/assets/coins/icp.png  ",
   },
   {
-    id: 6,
+    id: 23,
     namef: " چین لینک",
     name: "ChainLink - LINK",
     networkOne: "Bitcoin",
@@ -297,7 +298,7 @@ const rows = [
     icon: "https://cdn.bitimen.com/media/asset/logo/md/a0511b5d_4214_210202195238.png",
   },
   {
-    id: 6,
+    id: 24,
     namef: "سوایپ",
     name: "Swipe - SXP",
     networkOne: "Bitcoin",
@@ -309,7 +310,7 @@ const rows = [
     icon: "	https://abantether.com/eapi/assets/coins/sxp.svg",
   },
   {
-    id: 6,
+    id: 25,
     namef: "سوشی ",
     name: "Sushi - SUSHI",
     networkOne: "Bitcoin",
@@ -321,7 +322,7 @@ const rows = [
     icon: "	  https://bitbarg.me/images/coins/SUSHI.png",
   },
   {
-    id: 6,
+    id: 26,
     namef: "فایل کوین ",
     name: "Filecoin - FIL",
     networkOne: "Bitcoin",
@@ -333,7 +334,7 @@ const rows = [
     icon: "		https://abantether.com/eapi/assets/coins/fil.png",
   },
   {
-    id: 6,
+    id: 27,
     namef: " الگوراند  ",
     name: "Algorand - ALGO",
     networkOne: "Bitcoin",
@@ -345,7 +346,7 @@ const rows = [
     icon: "  https://abantether.com/eapi/assets/coins/algo.svg",
   },
   {
-    id: 6,
+    id: 28,
     namef: "یو اس دی کوین ",
     name: "USD Coin - USDC",
     networkOne: "Bitcoin",
@@ -358,7 +359,7 @@ const rows = [
   },
 
   {
-    id: 6,
+    id: 29,
     namef: "دوج کوین ",
     name: "DogeCoin - DOGE",
     networkOne: "Bitcoin",
@@ -370,7 +371,7 @@ const rows = [
     icon: "https://abantether.com/eapi/assets/coins/doge.svg",
   },
   {
-    id: 6,
+    id: 30,
     namef: "آراگون",
     name: "Aragon - ANT",
     networkOne: "Bitcoin",
@@ -382,7 +383,7 @@ const rows = [
     icon: "  https://abantether.com/eapi/assets/coins/ant.svg",
   },
   {
-    id: 6,
+    id: 31,
     namef: "دی‌سنترالند  ",
     name: "Decentraland - MANA",
     networkOne: "Bitcoin",
@@ -394,7 +395,7 @@ const rows = [
     icon: "https://cdn.bitimen.com/media/asset/logo/md/1b50db40_4036_210823173418.png",
   },
   {
-    id: 6,
+    id: 32,
     namef: "ترو یو اس دی   ",
     name: "TrueUSD - TUSD",
     networkOne: "Bitcoin",
@@ -406,7 +407,7 @@ const rows = [
     icon: "  https://abantether.com/eapi/assets/coins/tusd.svg",
   },
   {
-    id: 6,
+    id: 33,
     namef: "آکسی اینفینیتی   ",
     name: "Axie Infinity - AXS",
     networkOne: "Bitcoin",
@@ -418,7 +419,7 @@ const rows = [
     icon: "https://abantether.com/eapi/assets/coins/axs.png",
   },
   {
-    id: 6,
+    id: 34,
     namef: "کاوا",
     name: "Kava - KAVA",
     networkOne: "Bitcoin",
@@ -430,7 +431,7 @@ const rows = [
     icon: "https://abantether.com/eapi/assets/coins/kava.png",
   },
   {
-    id: 6,
+    id: 35,
     namef: "اومیسی گو ",
     name: "OmiseGO - OMG",
     networkOne: "Bitcoin",
@@ -442,7 +443,7 @@ const rows = [
     icon: "https://cdn.bitimen.com/media/asset/logo/md/eed7b64d_7461_210427225756.png",
   },
   {
-    id: 6,
+    id: 36,
     namef: "آوی ",
     name: "Aave - AAVE",
     networkOne: "Bitcoin",
@@ -454,7 +455,7 @@ const rows = [
     icon: "	https://abantether.com/eapi/assets/coins/aave.png",
   },
   {
-    id: 6,
+    id: 37,
     namef: "لایت کوین ",
     name: "Litecoin - LTC",
     networkOne: "Bitcoin",
@@ -466,7 +467,7 @@ const rows = [
     icon: "https://cdn.bitimen.com/media/asset/logo/md/97b39e54_6687_210301050451.png",
   },
   {
-    id: 6,
+    id: 38,
     namef: "داسک ",
     name: "DUSK - DUSK",
     networkOne: "Bitcoin",
@@ -479,6 +480,22 @@ const rows = [
   },
 ];
 export default function Wage() {
+  const [pageNumber, setPageNumber] = useState(10);
+  const [searchTrem, setSearchTrem] = useState("");
+  const [filterData, setFilterData] = useState("");
+  const [searchEvent, setSearchEvent] = useState(false);
+
+  useEffect(() => {
+    searchTrem
+      ? setFilterData(
+          rows.filter(
+            (item) =>
+              item.namef.includes(searchTrem) ||
+              item.name.toLowerCase().includes(searchTrem)
+          )
+        )
+      : setFilterData("");
+  }, [searchEvent]);
   return (
     <div className="container-wage">
       <Headericon />
@@ -488,11 +505,23 @@ export default function Wage() {
       <div className="parent-container-list-wage">
         <div className="container-list-wage">
           <div className="container-inputs-search">
-            <button className="btn-search">جستجو</button>
+            <button
+              onClick={() => {
+                setSearchEvent(!searchEvent);
+              }}
+              className="btn-search"
+            >
+              جستجو
+            </button>
             <div className="container-input-search">
+              {console.log(searchTrem)}
               <input
+                value={searchTrem}
+                onChange={(e) => {
+                  setSearchTrem(e.target.value);
+                }}
                 className="input-search"
-                type="search"
+                type="text"
                 placeholder="جستجو بر اساس نام و یا نماد اختصاری"
               />
               <Searchicon />
@@ -504,97 +533,135 @@ export default function Wage() {
             کارمزدها صرافی بین المللی بایننس است
             <p className="p-2-warning-wage">:توجه</p>
           </p>
-          <div className="css-1wy2bti">
-            <div data-area="left" className="css-1l4iui8 name-td">
-              <div className="css-lkqrqt">
-                <div
-                  data-bn-type="text"
-                  title="Last Price"
-                  className="css-1i04fkn"
-                >
-                  کارمزد فروش
+          <div className="css-ahynou-header">
+            <span className="wage-sell">کارمزد فروش</span>
+
+            <div className="name-td-3">
+              <a className="d-flex" href="https://bitbarg.me/bitcoin">
+                <div className=" container-firs-name-curency">
+                  <span className="wage-buy">کارمزد خرید</span>
                 </div>
+              </a>
+            </div>
+            <div className="buy-price-td-2 ">
+              <div className="unit-type-2">
+                <span className="curency">ارز دیجیتال</span>
               </div>
             </div>
-            <div data-area="left" className="css-1l4iui8 buy-price-td">
-              <div className="css-lkqrqt">
-                <div
-                  data-bn-type="text"
-                  title="Last Price"
-                  className="css-1i04fkn wage-buy"
-                >
-                  کارمزد خرید
-                </div>
-              </div>
-            </div>
-            <div data-area="left" className="css-1l4iui8 sell-price-td">
-              <div className="css-lkqrqt">
-                <div
-                  data-bn-type="text"
-                  title="Pair"
-                  className="css-1i04fkn name-corency-in-list-wage"
-                >
-                  ارز دیجیتال
-                </div>
-              </div>
-            </div>
-            <div data-area="left" className="css-1l4iui8 number-td">
-              <div className="css-lkqrqt">
-                <div
-                  data-bn-type="text"
-                  title="Pair"
-                  className="css-1i04fkn sharp-header-list-wage"
-                >
-                  #
-                </div>
-              </div>
+            <div className="sell-price-td">
+              <div className="sharplogo-header-wage">#</div>
             </div>
           </div>
-
-          {rows.map((row, index) => (
-            <div
-              key={row.id}
-              className="css-4cffwv lp-currency--row"
-              href="https://bitbarg.me/bitcoin"
-              data-symbol="BTCUSDT"
-            >
-              <div className="css-ahynou">
-                <div className="number-td-2">{row.numbercurenct}</div>
-                <div className="name-td-2">
-                  <a className="d-flex" href="https://bitbarg.me/bitcoin">
-                    <img className="image-curency" src={row.icon} alt="" />
-                    <div className=" container-firs-name-curency">
-                      <span className="searchable">
-                        {row.namef}
-                        <span className=" firs-name-curency">{row.name}</span>
-                      </span>
-                      <span className="searchablea">{row.name}</span>
+          {searchTrem && !filterData && <div></div>}
+          {filterData &&
+            filterData.map((row) => (
+              <div
+                key={row.id}
+                className="css-4cffwv lp-currency--row"
+                href="https://bitbarg.me/bitcoin"
+                data-symbol="BTCUSDT"
+              >
+                <div className="css-ahynou">
+                  <div className="number-td-2">{row.numbercurenct}</div>
+                  <div className="name-td-2">
+                    <a className="d-flex" href="https://bitbarg.me/bitcoin">
+                      <img className="image-curency" src={row.icon} alt="" />
+                      <div className=" container-firs-name-curency">
+                        <span className="searchable">
+                          {row.namef}
+                          <span className=" firs-name-curency">{row.name}</span>
+                        </span>
+                        <span className="searchablea">{row.name}</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div className="buy-price-td container-Network-curency">
+                    <div className="unit-type-2">
+                      <span>شبکه</span>
+                      <span>{row.networkOne}</span>
+                      <div className="price-wage">
+                        <span>{row.valueNetworkOne} تومان</span>
+                      </div>
                     </div>
-                  </a>
-                </div>
-                <div className="buy-price-td container-Network-curency">
-                  <div className="unit-type-2">
-                    <span>شبکه</span>
-                    <span>{row.networkOne}</span>
-                    <div className="price-wage">
-                      <span>{row.valueNetworkOne} تومان</span>
+                    <div className="unit-type-2">
+                      <span>شبکه</span>
+                      <span>{row.valueNetworkTwo}</span>
+                      <div className="price-wage">
+                        <span>{row.networkTwo} تومان</span>
+                      </div>
                     </div>
                   </div>
-                  <div className="unit-type-2">
-                    <span>شبکه</span>
-                    <span>{row.valueNetworkTwo}</span>
-                    <div className="price-wage">
-                      <span>{row.networkTwo} تومان</span>
-                    </div>
+                  <div className="sell-price-td">
+                    <span className="sell-price"></span>
+                    <span className="unit-type-free">رایگان</span>
                   </div>
-                </div>
-                <div className="sell-price-td">
-                  <span className="sell-price"></span>
-                  <span className="unit-type-free">رایگان</span>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+
+          {!filterData &&
+            rows.slice(0, pageNumber).map((row, index) => (
+              <div
+                key={row.id}
+                className="css-4cffwv lp-currency--row"
+                href="https://bitbarg.me/bitcoin"
+                data-symbol="BTCUSDT"
+              >
+                <div className="css-ahynou">
+                  <div className="number-td-2">{row.numbercurenct}</div>
+                  <div className="name-td-2">
+                    <a className="d-flex" href="https://bitbarg.me/bitcoin">
+                      <img className="image-curency" src={row.icon} alt="" />
+                      <div className=" container-firs-name-curency">
+                        <span className="searchable">
+                          {row.namef}
+                          <span className=" firs-name-curency">{row.name}</span>
+                        </span>
+                        <span className="searchablea">{row.name}</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div className="buy-price-td container-Network-curency">
+                    <div className="unit-type-2">
+                      <span>شبکه</span>
+                      <span>{row.networkOne}</span>
+                      <div className="price-wage">
+                        <span>{row.valueNetworkOne} تومان</span>
+                      </div>
+                    </div>
+                    <div className="unit-type-2">
+                      <span>شبکه</span>
+                      <span>{row.valueNetworkTwo}</span>
+                      <div className="price-wage">
+                        <span>{row.networkTwo} تومان</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="sell-price-td-2">
+                    <span className="sell-price"></span>
+                    <span className="unit-type-free">رایگان</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+        </div>
+      </div>
+      <div className="parent-pagenation">
+        <div
+          className="pagenation-1"
+          onClick={() => {
+            rows.length > pageNumber && setPageNumber(pageNumber + 10);
+          }}
+        >
+          ((بعدی
+        </div>{" "}
+        <div
+          className="pagenation-2"
+          onClick={() => {
+            pageNumber != 10 && setPageNumber(Number(pageNumber) - 10);
+          }}
+        >
+          قبلی))
         </div>
       </div>
     </div>
