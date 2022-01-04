@@ -26,7 +26,11 @@ export default function Headernew() {
       <div className="container-headernew">
         <div className="main-navbar-headernew">
           <div className="main-navbar-container-headernew">
-            <div onClick={() => setstate((prevstate) => !prevstate)}>
+            <div
+              tabIndex={0}
+              onBlur={() => setstate(false)}
+              onClick={() => setstate((prevstate) => !prevstate)}
+            >
               <Menu_icon />
             </div>
 
