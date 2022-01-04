@@ -245,7 +245,7 @@
   }
 }
 @media screen and (max-width: 576px) {
-  main.css: 203 .inputs-main {
+  .inputs-main {
     padding: 11px 2.5%;
     width: 100%;
   }

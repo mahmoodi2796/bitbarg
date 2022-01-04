@@ -28,40 +28,40 @@ export default function Information() {
               </p>
 
               <div className="container-inputs-page0information">
-                <div class="col-lg-6 col-sm-6 col-6 currency-select col-xs-6">
+                <div className="col-lg-6 col-sm-6 col-6 currency-select col-xs-6">
                   <select
-                    class="notify-currency-select notify-side-select"
+                    className="notify-currency-select notify-side-select"
                     name="side"
                   >
                     <option value="buy">قیمت خرید</option>
                     <option value="sell">قیمت فروش</option>
                   </select>
                 </div>
-                <div class="col-lg-6 col-sm-6 col-6 currency-select col-xs-6 relativ">
+                <div className="col-lg-6 col-sm-6 col-6 currency-select col-xs-6 relativ">
                   <span
                     data-v-779925ba=""
-                    class="input-group-addon currency_wrapper_home customBorderRadius"
+                    className="input-group-addon currency_wrapper_home customBorderRadius"
                   >
-                    <div data-v-779925ba="" class="dropdown">
+                    <div data-v-779925ba="" className="dropdown">
                       <label>انتخاب ارز</label>
                       <span id="update-icon">
                         <svg>
                           <use xlinkHref="https://bitbarg.me/images/cryptoicons.svg#BTC"></use>
                         </svg>
                       </span>
-                      <span class="dropdown-toggle">بیت کوین </span>
+                      <span className="dropdown-toggle">بیت کوین </span>
                     </div>
                   </span>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-lg-6 col-sm-6 col-6 col-xs-6">
-                  <div class="text-field--group">
+              <div className="row">
+                <div className="col-lg-6 col-sm-6 col-6 col-xs-6">
+                  <div className="text-field--group">
                     <input
                       name="alert-price"
                       type="text"
                       id="alert-price"
-                      class="input-ui"
+                      className="input-ui"
                     />
                     <input type="hidden" name="price" value="1414577970" />
                     <label className="absolute-inputs-page-information">
@@ -69,8 +69,8 @@ export default function Information() {
                     </label>
                   </div>
                 </div>
-                <div class="col-lg-6 col-sm-6 col-6 currency-select col-xs-6">
-                  <select class="notify-currency-select" name="type">
+                <div className="col-lg-6 col-sm-6 col-6 currency-select col-xs-6">
+                  <select className="notify-currency-select" name="type">
                     <option value="bigger">بیشتر از</option>
                     <option value="smaller">کمتر از</option>
                   </select>
@@ -78,9 +78,9 @@ export default function Information() {
               </div>
             </div>
             <div className="container-btn-page-information">
-              <button class="btn btn-login btn-loading">
+              <button className="btn btn-login btn-loading">
                 <span>!بمن اطلاع بده</span>
-                <div class="spinner" id="factor-loading"></div>
+                <div className="spinner" id="factor-loading"></div>
               </button>
             </div>
           </div>
