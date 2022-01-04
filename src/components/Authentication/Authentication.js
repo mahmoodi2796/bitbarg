@@ -5,9 +5,11 @@ import Exclamation from "../statics/svg/kyc-state-3.svg";
 import Headernew from "../Headernew/Headernew.js";
 
 export default function Login() {
+  let namePagetwo = "mahdi";
+
   return (
     <div className="container-login">
-      <Headernew />
+      <Headernew namePagetwo={namePagetwo} />
 
       <div className="cart-login">
         <div className="container-image-cart-login">

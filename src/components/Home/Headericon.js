@@ -19,7 +19,7 @@ import Menu_icon from "../statics/svg/Menu_icon.js";
 import React, { useState } from "react";
 import bitheader from "../statics/svg/Bitbarglogo.svg";
 
-export default function Header() {
+export default function Header(namePage) {
   const [state, setstate] = useState(false);
 
   return (
@@ -37,76 +37,90 @@ export default function Header() {
 
             <div className="header-right">
               {state && (
-                <div className="container-menu-hide-2">
-                  <div className="row-1-menu-hide-2">
-                    <a href="/login">
-                      <div className="container-order-2">
+                <>
+                  <div
+                    onClick={() => setstate(false)}
+                    style={{
+                      position: "fixed",
+                      top: "0px",
+                      left: "0px",
+                      width: "100%",
+                      height: "100%",
+
+                      zIndex: "1",
+                    }}
+                  ></div>
+                  <div
+                    style={{
+                      zIndex: "2",
+                    }}
+                    className="container-menu-hide"
+                  >
+                    <a className="item-hide-menu" href="/login">
+                      <div className="container-order">
                         <img width="70px" src={order} />
                         <div>سفارشات</div>
                       </div>
                     </a>
-                    <a href="/login">
-                      <div className="container-profile-2">
+                    <a className="item-hide-menu" href="/login">
+                      <div className="container-profile">
                         <img width="70px" src={profile} />
                         <div>پروفایل</div>
                       </div>{" "}
                     </a>
-                    <a href="/">
-                      <div className="container-home-2">
-                        <img width="70px" src={home} />
-                        <div>خانه</div>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="row-2-menu-hide-2">
-                    <div className="container-price-2">
+                    {namePage != "landing" && (
+                      <a className="item-hide-menu" href="/">
+                        <div className="container-home">
+                          <img width="70px" src={home} />
+                          <div>خانه</div>
+                        </div>
+                      </a>
+                    )}
+
+                    <div className="container-price">
                       <img width="70px" src={price} />
                       <div>قیمت لحظه ای </div>
                     </div>
 
-                    <div className="container-bitgap-2">
+                    <div className="container-bitgap">
                       <img width="70px" src={bitgap} />
                       <div>بیت گپ</div>
                     </div>
-                    <a href="Authentication">
-                      <div className="container-Identity-2">
+                    <a className="item-hide-menu" href="Authentication">
+                      <div className="container-Identity">
                         <img width="70px" src={Identity} />
                         <div>احراز هویت</div>
                       </div>
                     </a>
-                  </div>
-                  <div className="row-3-menu-hide-2">
-                    <div className="container-wallet-2">
+                    <div className="container-wallet">
                       <img width="70px" src={wallet} />
                       <div>ساخت کیف پول</div>
                     </div>
-                    <div className="container-Notifications-2">
-                      <img width="70px" src={Notifications} />
-                      <div>به من اطلاع بده!</div>
-                    </div>
-                    <a href="/Wage">
-                      <div className="container-Wage-2">
+                    <a className="item-hide-menu" href="/Information">
+                      <div className="container-Notifications">
+                        <img width="70px" src={Notifications} />
+                        <div>به من اطلاع بده!</div>
+                      </div>
+                    </a>
+                    <a className="item-hide-menu" href="/Wage">
+                      <div className="container-Wage">
                         <img width="70px" src={Wage} />
                         <div>کارمزد ها</div>
                       </div>
                     </a>
-                  </div>
-                  <div className="row-4-menu-hide-2">
-                    <div className="container-DirectionWage-2">
+                    <div className="container-DirectionWage">
                       <img width="70px" src={Direction} />
                       <div>مسیر بیت برگ</div>
                     </div>
-                    <div className="container-comment-2">
+                    <div className="container-comment">
                       <img width="70px" src={comment} />
                       <div>نظرات کاربران</div>
                     </div>
-                    <div className="container-question-2">
+                    <div className="container-question">
                       <img width="70px" src={question} />
                       <div>سوالات متداول</div>
                     </div>
-                  </div>
-                  <div className="row-5-menu-hide-2">
-                    <div className="container-opportunity-2">
+                    <div className="container-opportunity">
                       <img width="70px" src={opportunity} />
                       <div>قرصت های شفلی </div>
                     </div>
@@ -114,18 +128,16 @@ export default function Header() {
                       <img width="70px" src={bag} />
                       <div>گزارش باگ</div>
                     </div>
-                    <div className="container-Relationship-2">
+                    <div className="container-Relationship">
                       <img width="70px" src={Relationship} />
                       <div>ارتباط با مدیریت</div>
                     </div>
-                  </div>
-                  <div className="row-6-menu-hide-2">
-                    <div className="container-about-2">
+                    <div className="container-about">
                       <img width="70px" height="70" src={about} />
                       <div>درباره ما</div>
                     </div>
                   </div>
-                </div>
+                </>
               )}
               <a className="parent-btn-login-2" href="/login">
                 <button className="btn-login-2">ورود</button>

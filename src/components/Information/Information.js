@@ -3,9 +3,11 @@ import "./Information.css";
 import Headericon from "../Home/Headericon.js";
 
 export default function Information() {
+  let namePage = "landing";
+
   return (
     <div style={{ background: "#f2f7f7" }}>
-      <Headericon />
+      <Headericon namePage={namePage} />
       <div className="title-blue-header">
         <h1 className="title-blue-header-text">بمن اطلاع بده!</h1>
       </div>

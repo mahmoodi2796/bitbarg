@@ -48,13 +48,15 @@
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 1px 5px rgb(0 0 0 / 28%);
-  height: 645px;
+  height: 556px;
   margin-top: 64px;
   position: absolute;
   top: 0px;
-  width: 328px;
-  z-index: 11;
+  width: 314px;
+  display: flex;
   right: 5px;
+  justify-content: end;
+  flex-wrap: wrap;
 }
 .row-5-menu-hide,
 .row-4-menu-hide,
@@ -66,8 +68,12 @@
   padding: 0px 6px;
   padding-top: 11px;
 }
-.row-1-menu-hide {
-  padding-top: 27px;
+
+.container-order,
+.container-profile,
+.container-home,
+.container-price {
+  margin-top: 10px;
 }
 .container-order,
 .container-profile,
@@ -89,6 +95,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 103px;
 }
 .row-6-menu-hide {
   display: flex;

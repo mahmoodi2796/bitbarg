@@ -16,9 +16,11 @@ import Relationship from "../statics/png/Relationship.png";
 import Wage from "../statics/png/Wage.png";
 import wallet from "../statics/png/wallet.png";
 import profile from "../statics/png/profile.png";
+//libraires
+
 import React, { useState } from "react";
 
-export default function Headernew() {
+export default function Headernew({ namePage, namePagetwo }) {
   const [state, setstate] = useState(false);
 
   return (
@@ -26,37 +28,51 @@ export default function Headernew() {
       <div className="container-headernew">
         <div className="main-navbar-headernew">
           <div className="main-navbar-container-headernew">
-            <div
-              tabIndex={0}
-              onBlur={() => setstate(false)}
-              onClick={() => setstate((prevstate) => !prevstate)}
-            >
+            <div onClick={() => setstate(!state)}>
               <Menu_icon />
             </div>
 
             {state && (
-              <div className="container-menu-hide">
-                <div className="row-1-menu-hide">
-                  <a href="/login">
+              <>
+                <div
+                  onClick={() => setstate(false)}
+                  style={{
+                    position: "fixed",
+                    top: "0px",
+                    left: "0px",
+                    width: "100%",
+                    height: "100%",
+
+                    zIndex: "1",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    zIndex: "2",
+                  }}
+                  className="container-menu-hide"
+                >
+                  <a className="item-hide-menu" href="/login">
                     <div className="container-order">
                       <img width="70px" src={order} />
                       <div>سفارشات</div>
                     </div>
                   </a>
-                  <a href="/login">
+                  <a className="item-hide-menu" href="/login">
                     <div className="container-profile">
                       <img width="70px" src={profile} />
                       <div>پروفایل</div>
                     </div>{" "}
                   </a>
-                  <a href="/">
-                    <div className="container-home">
-                      <img width="70px" src={home} />
-                      <div>خانه</div>
-                    </div>
-                  </a>
-                </div>
-                <div className="row-2-menu-hide">
+                  {namePage != "landing" && (
+                    <a className="item-hide-menu" href="/">
+                      <div className="container-home">
+                        <img width="70px" src={home} />
+                        <div>خانه</div>
+                      </div>
+                    </a>
+                  )}
+
                   <div className="container-price">
                     <img width="70px" src={price} />
                     <div>قیمت لحظه ای </div>
@@ -66,32 +82,31 @@ export default function Headernew() {
                     <img width="70px" src={bitgap} />
                     <div>بیت گپ</div>
                   </div>
-                  <a href="Authentication">
-                    <div className="container-Identity">
-                      <img width="70px" src={Identity} />
-                      <div>احراز هویت</div>
-                    </div>
-                  </a>
-                </div>
-                <div className="row-3-menu-hide">
+                  {namePagetwo != "mahdi" && (
+                    <a className="item-hide-menu" href="Authentication">
+                      <div className="container-Identity">
+                        <img width="70px" src={Identity} />
+                        <div>احراز هویت</div>
+                      </div>
+                    </a>
+                  )}
+
                   <div className="container-wallet">
                     <img width="70px" src={wallet} />
                     <div>ساخت کیف پول</div>
                   </div>
-                  <a href="/Information">
+                  <a className="item-hide-menu" href="/Information">
                     <div className="container-Notifications">
                       <img width="70px" src={Notifications} />
                       <div>به من اطلاع بده!</div>
                     </div>
                   </a>
-                  <a href="/Wage">
+                  <a className="item-hide-menu" href="/Wage">
                     <div className="container-Wage">
                       <img width="70px" src={Wage} />
                       <div>کارمزد ها</div>
                     </div>
                   </a>
-                </div>
-                <div className="row-4-menu-hide">
                   <div className="container-DirectionWage">
                     <img width="70px" src={Direction} />
                     <div>مسیر بیت برگ</div>
@@ -104,8 +119,6 @@ export default function Headernew() {
                     <img width="70px" src={question} />
                     <div>سوالات متداول</div>
                   </div>
-                </div>
-                <div className="row-5-menu-hide">
                   <div className="container-opportunity">
                     <img width="70px" src={opportunity} />
                     <div>قرصت های شفلی </div>
@@ -118,14 +131,12 @@ export default function Headernew() {
                     <img width="70px" src={Relationship} />
                     <div>ارتباط با مدیریت</div>
                   </div>
-                </div>
-                <div className="row-6-menu-hide">
                   <div className="container-about">
                     <img width="70px" height="70" src={about} />
                     <div>درباره ما</div>
                   </div>
                 </div>
-              </div>
+              </>
             )}
             <a className="parent-btn-login-headernew" href="/login">
               <button className="btn-login-headernew">ورود</button>
