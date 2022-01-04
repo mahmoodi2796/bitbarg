@@ -212,9 +212,7 @@
     width: 200px;
     margin-bottom: 9px;
   }
-  .inputs-main {
-    padding: 11px 17px;
-  }
+
   .btn-buy {
     margin: 9px 4px;
   }
@@ -239,7 +237,64 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 1%;
+    margin-left: 2%;
     margin-right: 1%;
+  }
+  .btn-buy {
+    width: 142px;
+  }
+}
+@media screen and (max-width: 576px) {
+  main.css: 203 .inputs-main {
+    padding: 11px 2.5%;
+    width: 100%;
+  }
+  .cont-inputs  {
+    display: flex;
+    align-items: center;
+    margin: 0px 5%;
+  }
+  .btn-buy {
+    width: 142px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container-main {
+    margin-top: 45px;
+  }
+  .logo-mid-bitbarg {
+    width: 200px;
+    margin-bottom: 9px;
+  }
+
+  .btn-buy {
+    margin: 9px 4px;
+  }
+  .btn-sell {
+    margin: 9px 4px;
+  }
+  .time-work-1 {
+    margin-top: 11px;
+  }
+  .inputs-main {
+    padding: 11px 3%;
+  }
+  .parent-inputs {
+    padding: 0px 13px 0 0;
+    width: 30%;
+  }
+  .inputs-main {
+    padding: 11px 3%;
+    width: 100%;
+  }
+  .cont-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
+    margin-right: 1%;
+  }
+  .btn-buy {
+    width: 142px;
   }
 }
