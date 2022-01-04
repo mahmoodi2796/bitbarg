@@ -1,14 +1,12 @@
-import React from 'react'
-import Main from './Main.js'
-import Header from '../Home/Header';
-
+import React from "react";
+import Main from "./Main.js";
+import Headernew from "../Headernew/Headernew.js";
 
 export default function Home() {
-    return (
-        <div>
-            <Header/>
-            
-            <Main/>
-        </div>
-    )
+  return (
+    <div>
+      <Headernew />
+      <Main />
+    </div>
+  );
 }

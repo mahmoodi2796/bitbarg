@@ -1,4 +1,5 @@
-import "./Header.css";
+import Menu_icon from "../statics/svg/Menu_icon.js";
+import "./Headernew.css";
 import about from "../statics/png/about.png";
 import bag from "../statics/png/bag.png";
 import bitgap from "../statics/png/bitgap.png";
@@ -15,17 +16,16 @@ import Relationship from "../statics/png/Relationship.png";
 import Wage from "../statics/png/Wage.png";
 import wallet from "../statics/png/wallet.png";
 import profile from "../statics/png/profile.png";
-import Menu_icon from "../statics/svg/Menu_icon.js";
 import React, { useState } from "react";
 
-export default function Header() {
+export default function Headernew() {
   const [state, setstate] = useState(false);
 
   return (
-    <div>
-      <header>
-        <div className="main-navbar">
-          <div className="main-navbar-container">
+    <header>
+      <div className="container-headernew">
+        <div className="main-navbar-headernew">
+          <div className="main-navbar-container-headernew">
             <div onClick={() => setstate((prevstate) => !prevstate)}>
               <Menu_icon />
             </div>
@@ -123,12 +123,12 @@ export default function Header() {
                 </div>
               </div>
             )}
-            <a className="parent-btn-login" href="/login">
-              <button className="btn-login">ورود</button>
+            <a className="parent-btn-login-headernew" href="/login">
+              <button className="btn-login-headernew">ورود</button>
             </a>
           </div>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
   );
 }
