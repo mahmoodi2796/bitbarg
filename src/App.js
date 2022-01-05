@@ -5,7 +5,7 @@ import Authentication from "./components/Authentication/Authentication.js";
 import support from "./components/statics/png/support.png";
 import Wage from "./components/Wage/Wage.js";
 import Information from "./components/Information/Information.js";
-
+import Question from "./components/Question/Question.js";
 import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
         <Route path="/Authentication" element={<Authentication />} />
         <Route path="/wage" element={<Wage />} />
         <Route path="/Information" element={<Information />} />
+        <Route path="/Question" element={<Question />} />
       </Routes>
       <div className="container-support-fix">
         <img className="image-support-fix" src={support} />

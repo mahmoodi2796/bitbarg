@@ -484,6 +484,7 @@ export default function Wage() {
   const [searchTrem, setSearchTrem] = useState("");
   const [filterData, setFilterData] = useState("");
   const [searchEvent, setSearchEvent] = useState(false);
+  const [scrol, setScrol] = useState(false);
 
   useEffect(() => {
     searchTrem
@@ -496,9 +497,12 @@ export default function Wage() {
         )
       : setFilterData("");
   }, [searchEvent]);
+
+  let pageWage = "ali";
+
   return (
     <div className="container-wage">
-      <Headericon />
+      <Headericon pageWage={pageWage} />
       <div className="title-blue-header">
         <h1 className="title-blue-header-text">کارمزد ارزهای دیجیتال</h1>
       </div>

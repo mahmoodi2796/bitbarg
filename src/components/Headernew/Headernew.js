@@ -115,10 +115,12 @@ export default function Headernew({ namePage, namePagetwo }) {
                     <img width="70px" src={comment} />
                     <div>نظرات کاربران</div>
                   </div>
-                  <div className="container-question">
-                    <img width="70px" src={question} />
-                    <div>سوالات متداول</div>
-                  </div>
+                  <a href="/Question">
+                    <div className="container-question">
+                      <img width="70px" src={question} />
+                      <div>سوالات متداول</div>
+                    </div>
+                  </a>
                   <div className="container-opportunity">
                     <img width="70px" src={opportunity} />
                     <div>قرصت های شفلی </div>

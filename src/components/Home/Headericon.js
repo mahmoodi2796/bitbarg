@@ -19,7 +19,7 @@ import Menu_icon from "../statics/svg/Menu_icon.js";
 import React, { useState } from "react";
 import bitheader from "../statics/svg/Bitbarglogo.svg";
 
-export default function Header(namePage) {
+export default function Header(namePage, pageWage) {
   const [state, setstate] = useState(false);
 
   return (
@@ -46,7 +46,6 @@ export default function Header(namePage) {
                       left: "0px",
                       width: "100%",
                       height: "100%",
-
                       zIndex: "1",
                     }}
                   ></div>
@@ -102,12 +101,14 @@ export default function Header(namePage) {
                         <div>به من اطلاع بده!</div>
                       </div>
                     </a>
-                    <a className="item-hide-menu" href="/Wage">
-                      <div className="container-Wage">
-                        <img width="70px" src={Wage} />
-                        <div>کارمزد ها</div>
-                      </div>
-                    </a>
+                    {pageWage != "ali" && (
+                      <a className="item-hide-menu" href="/Wage">
+                        <div className="container-Wage">
+                          <img width="70px" src={Wage} />
+                          <div>کارمزد ها</div>
+                        </div>
+                      </a>
+                    )}
                     <div className="container-DirectionWage">
                       <img width="70px" src={Direction} />
                       <div>مسیر بیت برگ</div>
@@ -116,10 +117,12 @@ export default function Header(namePage) {
                       <img width="70px" src={comment} />
                       <div>نظرات کاربران</div>
                     </div>
-                    <div className="container-question">
-                      <img width="70px" src={question} />
-                      <div>سوالات متداول</div>
-                    </div>
+                    <a href="/Question">
+                      <div className="container-question">
+                        <img width="70px" src={question} />
+                        <div>سوالات متداول</div>
+                      </div>
+                    </a>
                     <div className="container-opportunity">
                       <img width="70px" src={opportunity} />
                       <div>قرصت های شفلی </div>
