@@ -127,10 +127,12 @@ export default function Header(namePage, pageWage) {
                       <img width="70px" src={opportunity} />
                       <div>قرصت های شفلی </div>
                     </div>
-                    <div className="container-bag">
-                      <img width="70px" src={bag} />
-                      <div>گزارش باگ</div>
-                    </div>
+                    <a href="/Bag">
+                      <div className="container-bag">
+                        <img width="70px" src={bag} />
+                        <div>گزارش باگ</div>
+                      </div>
+                    </a>
                     <div className="container-Relationship">
                       <img width="70px" src={Relationship} />
                       <div>ارتباط با مدیریت</div>
