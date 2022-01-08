@@ -71,7 +71,7 @@
 @keyframes blow {
   0% {
     background-color: #437dd3;
-    transform: scale(1);
+    transform: scale(5);
   }
   100% {
     background-color: #fff;
