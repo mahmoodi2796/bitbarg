@@ -51,6 +51,41 @@
   color: gray;
 }
 
+.parent {
+  position: fixed;
+  left: -15px;
+  bottom: 53px;
+  width: 120px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mehdi {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 100%;
+}
+@keyframes blow {
+  0% {
+    background-color: #437dd3;
+    transform: scale(1);
+  }
+  100% {
+    background-color: #fff;
+    transform: scale(10);
+  }
+}
+.golabi {
+  animation: blow 2.5s infinite;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 576px) {
   .container-support-fix {
     left: 15px;

@@ -25,8 +25,9 @@ function App() {
         <Route path="/Direction" element={<Direction />} />
         <Route path="/Wallet" element={<Wallet />} />
       </Routes>
-      <div className="container-support-fix">
-        <img className="image-support-fix" src={support} />
+      <div className="parent">
+        <div className="golabi"></div>
+        <img class="mehdi" src={support} />
       </div>
     </div>
   );
