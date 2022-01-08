@@ -74,7 +74,6 @@
     transform: scale(5);
   }
   100% {
-    background-color: #fff;
     transform: scale(10);
   }
 }
