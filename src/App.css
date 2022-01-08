@@ -50,6 +50,7 @@
   margin-right: 5px;
   color: gray;
 }
+
 @media screen and (max-width: 576px) {
   .container-support-fix {
     left: 15px;

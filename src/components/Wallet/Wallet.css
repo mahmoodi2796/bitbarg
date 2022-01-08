@@ -1,0 +1,128 @@
+.parent-container-main-wallet-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-main-wallet-page {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  margin-top: 15px;
+  position: relative;
+  margin-right: 50%;
+  margin-left: 50%;
+}
+.img-header-box-wallet-page {
+  width: 100%;
+  border-radius: 7px 7px 0px 0px;
+  display: block;
+  height: auto;
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+.row-1-wallet-page {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  margin-top: -40px;
+}
+.item-left-row-1-wallet-page,
+.item-right-row-1-wallet-page,
+.p-step-1,
+.p-step-2 {
+  direction: rtl;
+}
+.item-center-row-1-wallet-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.avatar-item-center-row-1-wallet-page {
+  border-radius: 50%;
+  width: 100%;
+}
+.parent-avatar-item-center-row-1-wallet-page {
+  width: 45%;
+}
+.item-right-row-1-wallet-page {
+  padding-right: 2%;
+  margin-top: 30px;
+}
+
+.item-left-row-1-wallet-page {
+  padding-left: 2%;
+  margin-top: 30px;
+}
+.container-main-box-wallet-page {
+  padding: 0px 100px;
+  padding-bottom: 40px;
+}
+.text-1-main-box-wallet-page {
+  direction: rtl;
+  text-align: inherit;
+}
+.link-dowload-teust-wallet {
+  direction: rtl;
+  font-size: 20px;
+}
+.color-blue {
+  color: blue;
+  font-size: 15px;
+}
+.h3-step-1 {
+  text-align: end;
+}
+.h3-step-2 {
+  text-align: end;
+}
+.item-appstore {
+  font-size: 14px;
+  color: blue;
+}
+.parent-image-step-1,
+.parent-image-step-2 {
+  display: flex;
+  justify-content: center;
+}
+.image-step-2,
+.image-step-1 {
+  max-width: 100%;
+}
+@media only screen and (max-width: 1100px) {
+}
+@media only screen and (max-width: 768px) {
+  .container-main-box-wallet-page {
+    padding: 0px 14px;
+    padding-bottom: 40px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container-main-wallet-page {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+    margin-top: 15px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .row-1-wallet-page {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    margin-top: -46px;
+  }
+}

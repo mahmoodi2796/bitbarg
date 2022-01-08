@@ -7,7 +7,8 @@ import Wage from "./components/Wage/Wage.js";
 import Information from "./components/Information/Information.js";
 import Question from "./components/Question/Question.js";
 import Bag from "./components/Bag/Bag.js";
-
+import Direction from "./components/Direction/Direction.js";
+import Wallet from "./components/Wallet/Wallet.js";
 import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
         <Route path="/Information" element={<Information />} />
         <Route path="/Question" element={<Question />} />
         <Route path="/Bag" element={<Bag />} />
+        <Route path="/Direction" element={<Direction />} />
+        <Route path="/Wallet" element={<Wallet />} />
       </Routes>
       <div className="container-support-fix">
         <img className="image-support-fix" src={support} />

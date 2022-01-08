@@ -1,5 +1,5 @@
 .container-main {
-  margin-top: 112px;
+  margin-top: 111px;
   margin-right: auto;
   margin-left: auto;
   width: 100%;
@@ -52,6 +52,9 @@
   padding: 3px;
   top: -15px;
   left: 15px;
+}
+.text-btn-buy {
+  text-shadow: 0 1px 5px rgb(0 0 0 / 70%);
 }
 .absolute-price-curency {
   position: absolute;

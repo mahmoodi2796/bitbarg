@@ -26,7 +26,9 @@ export default function Main() {
         <div className="action-container">
           <div className="container-btn-buy-sell">
             <button className="btn-sell"> فروش</button>
-            <button className="btn-buy">درخواست خرید</button>
+            <button className="btn-buy">
+              <span className="text-btn-buy">درخواست خرید</span>
+            </button>
           </div>
         </div>
         <div className="container-time-work">

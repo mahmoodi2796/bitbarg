@@ -75,11 +75,12 @@ export default function Header(namePage, pageWage) {
                         </div>
                       </a>
                     )}
-
-                    <div className="container-price">
-                      <img width="70px" src={price} />
-                      <div>قیمت لحظه ای </div>
-                    </div>
+                    <a href="https://bitbarg.me/live-price">
+                      <div className="container-price">
+                        <img width="70px" src={price} />
+                        <div>قیمت لحظه ای </div>
+                      </div>
+                    </a>
 
                     <div className="container-bitgap">
                       <img width="70px" src={bitgap} />
@@ -91,10 +92,12 @@ export default function Header(namePage, pageWage) {
                         <div>احراز هویت</div>
                       </div>
                     </a>
-                    <div className="container-wallet">
-                      <img width="70px" src={wallet} />
-                      <div>ساخت کیف پول</div>
-                    </div>
+                    <a href="/Wallet">
+                      <div className="container-wallet">
+                        <img width="70px" src={wallet} />
+                        <div>ساخت کیف پول</div>
+                      </div>
+                    </a>
                     <a className="item-hide-menu" href="/Information">
                       <div className="container-Notifications">
                         <img width="70px" src={Notifications} />
@@ -109,10 +112,10 @@ export default function Header(namePage, pageWage) {
                         </div>
                       </a>
                     )}
-                    <div className="container-DirectionWage">
+                    <a href="/Direction" className="container-DirectionWage">
                       <img width="70px" src={Direction} />
                       <div>مسیر بیت برگ</div>
-                    </div>
+                    </a>
                     <div className="container-comment">
                       <img width="70px" src={comment} />
                       <div>نظرات کاربران</div>
@@ -123,20 +126,27 @@ export default function Header(namePage, pageWage) {
                         <div>سوالات متداول</div>
                       </div>
                     </a>
-                    <div className="container-opportunity">
-                      <img width="70px" src={opportunity} />
-                      <div>قرصت های شفلی </div>
-                    </div>
+                    <a
+                      href="https://jobinja.ir/companies/bitbarg/jobs"
+                      target="_blank"
+                    >
+                      <div className="container-opportunity">
+                        <img width="70px" src={opportunity} />
+                        <div>قرصت های شفلی </div>
+                      </div>
+                    </a>
                     <a href="/Bag">
                       <div className="container-bag">
                         <img width="70px" src={bag} />
                         <div>گزارش باگ</div>
                       </div>
                     </a>
-                    <div className="container-Relationship">
-                      <img width="70px" src={Relationship} />
-                      <div>ارتباط با مدیریت</div>
-                    </div>
+                    <a href="/login">
+                      <div className="container-Relationship">
+                        <img width="70px" src={Relationship} />
+                        <div>ارتباط با مدیریت</div>
+                      </div>
+                    </a>
                     <div className="container-about">
                       <img width="70px" height="70" src={about} />
                       <div>درباره ما</div>
