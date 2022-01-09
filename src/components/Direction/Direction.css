@@ -85,6 +85,16 @@
   color: #fff;
   background: #4285f4;
 }
+.parent-border-page-Direction {
+  position: absolute;
+  width: 51px;
+  height: 2365px;
+  background-color: #fff;
+  top: 20px;
+  left: 48%;
+  display: flex;
+  justify-content: center;
+}
 .timeline-heading-5 {
   padding: 0px 20px;
   height: 34px;
@@ -372,10 +382,9 @@
   .border-page-Direction {
     position: absolute;
     width: 2px;
-    height: 2365px;
+    height: 2265px;
     background-color: #e1e0e0;
-    top: 50px;
-    left: 5.3%;
+    top: 40px;
   }
   .circel {
     width: 50px;
@@ -601,5 +610,15 @@
     align-items: center;
     color: #fff;
     font-size: 10px;
+  }
+  .parent-border-page-Direction {
+    position: absolute;
+    width: 51px;
+    height: 2365px;
+    background-color: #fff;
+    top: 50px;
+    left: 2%;
+    display: flex;
+    justify-content: center;
   }
 }

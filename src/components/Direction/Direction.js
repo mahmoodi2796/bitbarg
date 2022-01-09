@@ -11,12 +11,14 @@ export default function Direction() {
       </div>
       <div className="parent-container-main-Direction">
         <div className="container-main-Direction">
-          <div className="border-page-Direction"></div>
+          <div className="parent-border-page-Direction">
+            <div className="border-page-Direction"></div>
+          </div>
+          <div className="circel">
+            خرداد <br />
+            ۱۴۰۰
+          </div>
           <div className="container-circle">
-            <div className="circel">
-              خرداد <br />
-              ۱۴۰۰
-            </div>
             <div className="circel-2">
               خرداد <br />
               ۱۴۰۰
