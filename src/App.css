@@ -68,15 +68,6 @@
   background-color: white;
   border-radius: 100%;
 }
-@keyframes blow {
-  0% {
-    background-color: #437dd3;
-    transform: scale(5);
-  }
-  100% {
-    transform: scale(10);
-  }
-}
 .golabi {
   animation: blow 2.5s infinite;
   border-radius: 50%;
@@ -84,6 +75,18 @@
   width: 10px;
   margin: 0 auto;
 }
+@keyframes blow {
+  0% {
+    background-color: #437dd3;
+    transform: scale(1);
+  }
+
+  100% {
+    background-color: #ffffff;
+    transform: scale(10);
+  }
+}
+
 
 @media screen and (max-width: 576px) {
   .container-support-fix {
