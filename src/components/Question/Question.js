@@ -44,7 +44,7 @@ export default function Question() {
       </div>
       <div className="container-collapses">
         <div className="accordion">
-          <div className="parent-container-colapse-1">
+          <div className="parent-container-colapse-1 100">
             <div className="container-colapse-1">
               <button className="colapse-hide">
                 <span onClick={() => setcolapseone((prevState) => !prevState)}>
@@ -194,7 +194,7 @@ export default function Question() {
               </button>
             </div>
           </div>
-          <div className="parent-container-colapse-1">
+          <div className="parent-container-colapse-1 99">
             <div className="container-colapse-1">
               <button className="colapse-hide">
                 <span onClick={() => setcolapsefive((prevState) => !prevState)}>
@@ -281,7 +281,7 @@ export default function Question() {
               </button>
             </div>
           </div>
-          <div className="parent-container-colapse-1">
+          <div className="parent-container-colapse-1 98">
             <div className="container-colapse-1">
               <button className="colapse-hide">
                 <span
@@ -468,7 +468,7 @@ export default function Question() {
               </button>
             </div>
           </div>
-          <div className="parent-container-colapse-1">
+          <div className="parent-container-colapse-1 97">
             <div className="container-colapse-1">
               <button className="colapse-hide">
                 <span
@@ -639,7 +639,7 @@ export default function Question() {
               </button>
             </div>
           </div>
-          <div className="parent-container-colapse-1">
+          <div className="parent-container-colapse-1 96">
             <div className="container-colapse-1">
               <button className="colapse-hide">
                 <span
@@ -793,7 +793,7 @@ export default function Question() {
               </button>
             </div>
           </div>
-          <div className="parent-container-colapse-1">
+          <div className="parent-container-colapse-1 95">
             <div className="container-colapse-1">
               <button className="colapse-hide">
                 <span
@@ -947,7 +947,7 @@ export default function Question() {
               </button>
             </div>
           </div>
-          <div className="parent-container-colapse-1">
+          <div className="parent-container-colapse-1 94">
             <div className="container-colapse-1">
               <button className="colapse-hide">
                 <span
@@ -1101,7 +1101,7 @@ export default function Question() {
               </button>
             </div>
           </div>
-          <div className="parent-container-colapse-1">
+          <div className="parent-container-colapse-1 93">
             <div className="container-colapse-1">
               <button className="colapse-hide">
                 <span
@@ -1255,7 +1255,7 @@ export default function Question() {
               </button>
             </div>
           </div>
-          <div className="parent-container-colapse-1">
+          <div className="parent-container-colapse-1 92">
             <div className="container-colapse-1">
               <button className="colapse-hide">
                 <span
@@ -1409,7 +1409,7 @@ export default function Question() {
               </button>
             </div>
           </div>
-          <div className="parent-container-colapse-1">
+          <div className="parent-container-colapse-1 ">
             <div className="container-colapse-1">
               <button className="colapse-hide">
                 <span
