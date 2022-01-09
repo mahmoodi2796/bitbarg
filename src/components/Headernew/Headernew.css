@@ -54,7 +54,7 @@
   top: 0px;
   width: 314px;
   display: flex;
-  right: 5px;
+  right: 32px;
   justify-content: end;
   flex-wrap: wrap;
 }
@@ -148,6 +148,20 @@ a {
 @media (max-width: 786px) {
   .main-navbar-headernew {
     padding: 15px 10px;
+  }
+  .container-menu-hide {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 28%);
+    height: 556px;
+    margin-top: 64px;
+    position: absolute;
+    top: 0px;
+    width: 314px;
+    display: flex;
+    right: 5px;
+    justify-content: end;
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 576px) {
