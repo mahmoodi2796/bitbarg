@@ -3,7 +3,7 @@ import "./Information.css";
 import Headericon from "../Home/Headericon.js";
 
 export default function Information() {
-  let namePage = "landing";
+  let namePage = "Information";
 
   return (
     <div style={{ background: "#f2f7f7" }}>

@@ -20,7 +20,7 @@ import profile from "../statics/png/profile.png";
 
 import React, { useState } from "react";
 
-export default function Headernew({ namePage, namePagetwo }) {
+export default function Headernew({ namePage, namePagetwo, namePagethree }) {
   const [state, setstate] = useState(false);
 
   return (
@@ -58,6 +58,7 @@ export default function Headernew({ namePage, namePagetwo }) {
                       <div>سفارشات</div>
                     </div>
                   </a>
+
                   <a className="item-hide-menu" href="/login">
                     <div className="container-profile">
                       <img width="70px" src={profile} />
@@ -72,7 +73,6 @@ export default function Headernew({ namePage, namePagetwo }) {
                       </div>
                     </a>
                   )}
-
                   <a href="https://bitbarg.me/live-price">
                     <div className="container-price">
                       <img width="70px" src={price} />
@@ -93,12 +93,14 @@ export default function Headernew({ namePage, namePagetwo }) {
                     </a>
                   )}
 
-                  <a href="/Wallet">
-                    <div className="container-wallet">
-                      <img width="70px" src={wallet} />
-                      <div>ساخت کیف پول</div>
-                    </div>
-                  </a>
+                  {namePage != "wallet" && (
+                    <a href="/Wallet">
+                      <div className="container-wallet">
+                        <img width="70px" src={wallet} />
+                        <div>ساخت کیف پول</div>
+                      </div>
+                    </a>
+                  )}
                   <a className="item-hide-menu" href="/Information">
                     <div className="container-Notifications">
                       <img width="70px" src={Notifications} />
@@ -119,24 +121,28 @@ export default function Headernew({ namePage, namePagetwo }) {
                     <img width="70px" src={comment} />
                     <div>نظرات کاربران</div>
                   </div>
-                  <a href="/Question">
-                    <div className="container-question">
-                      <img width="70px" src={question} />
-                      <div>سوالات متداول</div>
-                    </div>
-                  </a>
+                  {namePage != "question" && (
+                    <a href="/Question">
+                      <div className="container-question">
+                        <img width="70px" src={question} />
+                        <div>سوالات متداول</div>
+                      </div>
+                    </a>
+                  )}
                   <a href="https://jobinja.ir/companies/bitbarg/jobs">
                     <div className="container-opportunity">
                       <img width="70px" src={opportunity} />
                       <div>قرصت های شفلی </div>
                     </div>
                   </a>
-                  <a href="/Bag">
-                    <div className="container-bag">
-                      <img width="70px" src={bag} />
-                      <div>گزارش باگ</div>
-                    </div>
-                  </a>
+                  {namePage != "bag" && (
+                    <a href="/Bag">
+                      <div className="container-bag">
+                        <img width="70px" src={bag} />
+                        <div>گزارش باگ</div>
+                      </div>
+                    </a>
+                  )}
                   <a href="/login">
                     <div className="container-Relationship">
                       <img width="70px" src={Relationship} />

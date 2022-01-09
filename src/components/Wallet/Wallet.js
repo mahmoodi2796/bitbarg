@@ -3,9 +3,11 @@ import Headericon from "../Home/Headericon";
 import "./Wallet.css";
 
 export default function Wallet() {
+  let namePage = "wallet";
+
   return (
     <div>
-      <Headericon />
+      <Headericon namePage={namePage} />
       <div className="title-blue-header">
         <h1 className="title-blue-header-text-2">اموزش ساخت کیف پول</h1>
       </div>

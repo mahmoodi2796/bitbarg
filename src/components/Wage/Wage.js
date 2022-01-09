@@ -498,11 +498,11 @@ export default function Wage() {
       : setFilterData("");
   }, [searchEvent]);
 
-  let pageWage = "ali";
+  let namePage = "wage";
 
   return (
     <div className="container-wage">
-      <Headericon pageWage={pageWage} />
+      <Headericon namePage={namePage} />
       <div className="title-blue-header">
         <h1 className="title-blue-header-text">کارمزد ارزهای دیجیتال</h1>
       </div>

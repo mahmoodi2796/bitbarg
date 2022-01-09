@@ -19,7 +19,7 @@ import Menu_icon from "../statics/svg/Menu_icon.js";
 import React, { useState } from "react";
 import bitheader from "../statics/svg/Bitbarglogo.svg";
 
-export default function Header(namePage, pageWage) {
+export default function Header({ namePage }, pageWage) {
   const [state, setstate] = useState(false);
 
   return (
@@ -67,6 +67,7 @@ export default function Header(namePage, pageWage) {
                         <div>پروفایل</div>
                       </div>{" "}
                     </a>
+
                     {namePage != "landing" && (
                       <a className="item-hide-menu" href="/">
                         <div className="container-home">
@@ -92,19 +93,24 @@ export default function Header(namePage, pageWage) {
                         <div>احراز هویت</div>
                       </div>
                     </a>
-                    <a href="/Wallet">
-                      <div className="container-wallet">
-                        <img width="70px" src={wallet} />
-                        <div>ساخت کیف پول</div>
-                      </div>
-                    </a>
-                    <a className="item-hide-menu" href="/Information">
-                      <div className="container-Notifications">
-                        <img width="70px" src={Notifications} />
-                        <div>به من اطلاع بده!</div>
-                      </div>
-                    </a>
-                    {pageWage != "ali" && (
+
+                    {namePage != "wallet" && (
+                      <a href="/Wallet">
+                        <div className="container-wallet">
+                          <img width="70px" src={wallet} />
+                          <div>ساخت کیف پول</div>
+                        </div>
+                      </a>
+                    )}
+                    {namePage != "Information" && (
+                      <a className="item-hide-menu" href="/Information">
+                        <div className="container-Notifications">
+                          <img width="70px" src={Notifications} />
+                          <div>به من اطلاع بده!</div>
+                        </div>
+                      </a>
+                    )}
+                    {namePage != "wage" && (
                       <a className="item-hide-menu" href="/Wage">
                         <div className="container-Wage">
                           <img width="70px" src={Wage} />
@@ -112,20 +118,24 @@ export default function Header(namePage, pageWage) {
                         </div>
                       </a>
                     )}
-                    <a href="/Direction" className="container-DirectionWage">
-                      <img width="70px" src={Direction} />
-                      <div>مسیر بیت برگ</div>
-                    </a>
+                    {namePage != "Direction" && (
+                      <a href="/Direction" className="container-DirectionWage">
+                        <img width="70px" src={Direction} />
+                        <div>مسیر بیت برگ</div>
+                      </a>
+                    )}
                     <div className="container-comment">
                       <img width="70px" src={comment} />
                       <div>نظرات کاربران</div>
                     </div>
-                    <a href="/Question">
-                      <div className="container-question">
-                        <img width="70px" src={question} />
-                        <div>سوالات متداول</div>
-                      </div>
-                    </a>
+                    {namePage != "question" && (
+                      <a href="/Question">
+                        <div className="container-question">
+                          <img width="70px" src={question} />
+                          <div>سوالات متداول</div>
+                        </div>
+                      </a>
+                    )}
                     <a
                       href="https://jobinja.ir/companies/bitbarg/jobs"
                       target="_blank"
@@ -135,12 +145,14 @@ export default function Header(namePage, pageWage) {
                         <div>قرصت های شفلی </div>
                       </div>
                     </a>
-                    <a href="/Bag">
-                      <div className="container-bag">
-                        <img width="70px" src={bag} />
-                        <div>گزارش باگ</div>
-                      </div>
-                    </a>
+                    {namePage != "bag" && (
+                      <a href="/Bag">
+                        <div className="container-bag">
+                          <img width="70px" src={bag} />
+                          <div>گزارش باگ</div>
+                        </div>
+                      </a>
+                    )}
                     <a href="/login">
                       <div className="container-Relationship">
                         <img width="70px" src={Relationship} />

@@ -2,9 +2,11 @@ import React from "react";
 import "./Bag.css";
 import Headericon from "../Home/Headericon.js";
 export default function Bag() {
+  const namePage = "bag";
+
   return (
     <div className="container-bag-page">
-      <Headericon />
+      <Headericon namePage={namePage} />
       <div className="title-blue-header">
         <h1 className="title-blue-header-text-2">گزارش باگ </h1>
       </div>

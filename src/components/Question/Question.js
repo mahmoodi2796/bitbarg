@@ -35,10 +35,10 @@ export default function Question() {
   const [colapseonetotwoefour, setcolapseonetotwoefour] = React.useState(false);
   const [colapseonetotwoefive, setcolapseonetotwoefive] = React.useState(false);
   const [colapseonetotwoesix, setcolapseonetotwoesix] = React.useState(false);
-
+  const namePage = "question";
   return (
     <div className="container-question-page">
-      <Headericon />
+      <Headericon namePage={namePage} />
       <div className="title-blue-header">
         <h1 className="title-blue-header-text-2">سوالات متداول </h1>
       </div>

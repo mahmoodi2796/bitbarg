@@ -4,9 +4,12 @@ import loginpng from "../statics/png/login.png";
 import Headernew from "../Headernew/Headernew.js";
 
 export default function Login() {
+  const namePage = "login";
+  const namePagethree = "profile";
+
   return (
     <div className="container-login">
-      <Headernew />
+      <Headernew namePage={namePage} />
 
       <div className="cart-login">
         <div className="container-image-cart-login">
