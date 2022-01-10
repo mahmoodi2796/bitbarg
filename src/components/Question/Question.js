@@ -79,7 +79,7 @@ export default function Question() {
                       style={{
                         margintop: "13px 0px 0px 0px",
                         width: "100%",
-                        maxHeight: colapseonetoone ? 25 : 0,
+                        maxHeight: colapseonetoone ? 450 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -109,7 +109,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetotwo ? 150 : 0,
+                        maxHeight: colapseonetotwo ? 450 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -145,7 +145,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetothree ? 150 : 0,
+                        maxHeight: colapseonetothree ? 450 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -178,7 +178,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetofour ? 68 : 0,
+                        maxHeight: colapseonetofour ? 680 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -227,7 +227,7 @@ export default function Question() {
                       style={{
                         margintop: "13px 0px 0px 0px",
                         width: "100%",
-                        maxHeight: colapseonetosix ? 125 : 0,
+                        maxHeight: colapseonetosix ? 400 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -320,7 +320,7 @@ export default function Question() {
                       style={{
                         margintop: "13px 0px 0px 0px",
                         width: "100%",
-                        maxHeight: colapseonetonine ? 250 : 0,
+                        maxHeight: colapseonetonine ? 450 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 900ms",
@@ -507,7 +507,7 @@ export default function Question() {
                       style={{
                         margintop: "13px 0px 0px 0px",
                         width: "100%",
-                        maxHeight: colapseonetofiveteen ? 250 : 0,
+                        maxHeight: colapseonetofiveteen ? 450 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -555,7 +555,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetosixteen ? 150 : 0,
+                        maxHeight: colapseonetosixteen ? 450 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -592,7 +592,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetoseventeen ? 150 : 0,
+                        maxHeight: colapseonetoseventeen ? 450 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -678,7 +678,7 @@ export default function Question() {
                       style={{
                         margintop: "13px 0px 0px 0px",
                         width: "100%",
-                        maxHeight: colapseonetoone ? 25 : 0,
+                        maxHeight: colapseonetoone ? 45 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -777,7 +777,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetofour ? 68 : 0,
+                        maxHeight: colapseonetofour ? 468 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -832,7 +832,7 @@ export default function Question() {
                       style={{
                         margintop: "13px 0px 0px 0px",
                         width: "100%",
-                        maxHeight: colapseonetoone ? 25 : 0,
+                        maxHeight: colapseonetoone ? 425 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -862,7 +862,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetotwo ? 150 : 0,
+                        maxHeight: colapseonetotwo ? 450 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -898,7 +898,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetothree ? 150 : 0,
+                        maxHeight: colapseonetothree ? 450 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -931,7 +931,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetofour ? 68 : 0,
+                        maxHeight: colapseonetofour ? 468 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -986,7 +986,7 @@ export default function Question() {
                       style={{
                         margintop: "13px 0px 0px 0px",
                         width: "100%",
-                        maxHeight: colapseonetoone ? 25 : 0,
+                        maxHeight: colapseonetoone ? 425 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -1016,7 +1016,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetotwo ? 150 : 0,
+                        maxHeight: colapseonetotwo ? 450 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -1052,7 +1052,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetothree ? 150 : 0,
+                        maxHeight: colapseonetothree ? 450 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -1085,7 +1085,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetofour ? 68 : 0,
+                        maxHeight: colapseonetofour ? 468 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -1140,7 +1140,7 @@ export default function Question() {
                       style={{
                         margintop: "13px 0px 0px 0px",
                         width: "100%",
-                        maxHeight: colapseonetoone ? 25 : 0,
+                        maxHeight: colapseonetoone ? 425 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -1170,7 +1170,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetotwo ? 150 : 0,
+                        maxHeight: colapseonetotwo ? 450 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -1206,7 +1206,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetothree ? 150 : 0,
+                        maxHeight: colapseonetothree ? 450 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -1239,7 +1239,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetofour ? 68 : 0,
+                        maxHeight: colapseonetofour ? 468 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -1294,7 +1294,7 @@ export default function Question() {
                       style={{
                         margintop: "13px 0px 0px 0px",
                         width: "100%",
-                        maxHeight: colapseonetoone ? 25 : 0,
+                        maxHeight: colapseonetoone ? 425 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -1324,7 +1324,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetotwo ? 150 : 0,
+                        maxHeight: colapseonetotwo ? 450 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -1360,7 +1360,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetothree ? 150 : 0,
+                        maxHeight: colapseonetothree ? 450 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -1393,7 +1393,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetofour ? 68 : 0,
+                        maxHeight: colapseonetofour ? 468 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -1448,7 +1448,7 @@ export default function Question() {
                       style={{
                         margintop: "13px 0px 0px 0px",
                         width: "100%",
-                        maxHeight: colapseonetoone ? 25 : 0,
+                        maxHeight: colapseonetoone ? 425 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -1478,7 +1478,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetotwo ? 150 : 0,
+                        maxHeight: colapseonetotwo ? 450 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -1514,7 +1514,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetothree ? 150 : 0,
+                        maxHeight: colapseonetothree ? 450 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -1547,7 +1547,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetofour ? 68 : 0,
+                        maxHeight: colapseonetofour ? 468 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -1602,7 +1602,7 @@ export default function Question() {
                       style={{
                         margintop: "13px 0px 0px 0px",
                         width: "100%",
-                        maxHeight: colapseonetoone ? 25 : 0,
+                        maxHeight: colapseonetoone ? 425 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -1632,7 +1632,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetotwo ? 150 : 0,
+                        maxHeight: colapseonetotwo ? 450 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -1668,7 +1668,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetothree ? 150 : 0,
+                        maxHeight: colapseonetothree ? 450 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",
@@ -1701,7 +1701,7 @@ export default function Question() {
                       className="hide-colapse-1-2"
                       style={{
                         width: "100%",
-                        maxHeight: colapseonetofour ? 68 : 0,
+                        maxHeight: colapseonetofour ? 468 : 0,
                         background: "white",
                         overflow: "hidden",
                         transition: "max-height 500ms",

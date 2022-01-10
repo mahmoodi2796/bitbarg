@@ -49,7 +49,9 @@ export default function About() {
               ارزهای دیجیتال است که از سال ۱۳۹۷ با هدف فراهم آوردن بستری امن و
               سریع برای خرید و فروش ارزهای دیجیتال شروع به کار کرده است.
             </p>
+
             <img className="image-map-about-wage" src={map} />
+
             <div className="btn-back-to-page-home">
               <a className="btn-back" href="/">
                 بازگشت

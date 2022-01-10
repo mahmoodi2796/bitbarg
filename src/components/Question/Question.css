@@ -138,4 +138,9 @@
   .container-collapses {
     max-width: 92%;
   }
+  .dis-hide-colapse-1-1 {
+    font-size: 12px;
+    margin-right: 0px;
+    margin-top: 6px;
+  }
 }
