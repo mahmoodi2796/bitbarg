@@ -14,72 +14,6 @@ export default function Direction() {
           <div className="parent-border-page-Direction">
             <div className="border-page-Direction"></div>
           </div>
-          <div className="circel">
-            خرداد <br />
-            ۱۴۰۰
-          </div>
-          <div className="container-circle">
-            <div className="circel-2">
-              خرداد <br />
-              ۱۴۰۰
-            </div>
-            <div className="circel-2 t3">
-              خرداد <br />
-              ۱۳۹۹
-            </div>{" "}
-            <div className="circel-3">
-              خرداد <br />
-              ۱۳۹۸
-            </div>{" "}
-            <div className="circel-4">
-              خرداد <br />
-              ۱۳۹۸
-            </div>{" "}
-            <div className="circel-5">
-              خرداد <br />
-              ۱۳۹۸
-            </div>{" "}
-            <div className="circel-6">
-              خرداد <br />
-              ۱۳۹۸
-            </div>{" "}
-            <div className="circel-7">
-              خرداد <br />
-              ۱۳۹۸
-            </div>{" "}
-            <div className="circel-8">
-              خرداد <br />
-              ۱۳۹۸
-            </div>{" "}
-            <div className="circel-9">
-              خرداد <br />
-              ۱۳۹۸
-            </div>{" "}
-            <div className="circel-10">
-              خرداد <br />
-              ۱۳۹۸
-            </div>{" "}
-            <div className="circel-11">
-              خرداد <br />
-              ۱۳۹۸
-            </div>{" "}
-            <div className="circel-12">
-              خرداد <br />
-              ۱۳۹۷
-            </div>{" "}
-            <div className="circel-13">
-              خرداد <br />
-              ۱۳۹۷
-            </div>{" "}
-            <div className="circel-14">
-              خرداد <br />
-              ۱۳۹۷
-            </div>{" "}
-            <div className="circel-15">
-              خرداد <br />
-              ۱۳۹۷
-            </div>
-          </div>
           <div className="timeline-panel">
             <div className="timeline-heading">
               <h4 className="timeline-title">نسخه ۲.۴</h4>
@@ -95,6 +29,10 @@ export default function Direction() {
               <br />
               رفع باگ های گزارش شده❖
               <br />
+            </div>
+            <div className="circel">
+              خرداد <br />
+              ۱۴۰۰
             </div>
           </div>
           <div className="timeline-panel-2">
@@ -114,6 +52,10 @@ export default function Direction() {
               <br />
               افزودن سرویس اطلاع رسانی❖
             </div>
+            <div className="circel-2">
+              خرداد <br />
+              ۱۴۰۰
+            </div>
           </div>
           <div className="timeline-panel">
             <div className="timeline-heading-3">
@@ -126,6 +68,10 @@ export default function Direction() {
               <br />
               راه اندازی سیستم اطلاع رسانی❖
             </div>
+            <div className="circel-2 t3">
+              خرداد <br />
+              ۱۳۹۹
+            </div>{" "}
           </div>
           <div className="timeline-panel-2">
             <div className="timeline-heading-4">
@@ -138,6 +84,10 @@ export default function Direction() {
               <br />
               رفع باگ های گزارش شده❖
             </div>
+            <div className="circel-3">
+              خرداد <br />
+              ۱۳۹۸
+            </div>{" "}
           </div>
           <div className="timeline-panel">
             <div className="timeline-heading-5">
@@ -150,6 +100,10 @@ export default function Direction() {
               <br />
               رفع باگ های گزارش شده❖
             </div>
+            <div className="circel-4">
+              خرداد <br />
+              ۱۳۹۸
+            </div>{" "}
           </div>
           <div className="timeline-panel-2">
             <div className="timeline-heading-2">
@@ -160,6 +114,10 @@ export default function Direction() {
               <br />
               بهینه سازی فرایند خرید و فروش❖
             </div>
+            <div className="circel-5">
+              خرداد <br />
+              ۱۳۹۸
+            </div>{" "}
           </div>
           <div className="timeline-panel">
             <div className="timeline-heading-3">
@@ -172,6 +130,10 @@ export default function Direction() {
               <br />
               تسویه حساب آنی سفارشات خرید و فروش❖
             </div>
+            <div className="circel-6">
+              خرداد <br />
+              ۱۳۹۸
+            </div>{" "}
           </div>
           <div className="timeline-panel-2">
             <div className="timeline-heading-4">
@@ -184,6 +146,10 @@ export default function Direction() {
               <br />
               اضافه شدن بلاگ در بیت برگ❖
             </div>
+            <div className="circel-7">
+              خرداد <br />
+              ۱۳۹۸
+            </div>{" "}
           </div>
           <div className="timeline-panel">
             <div className="timeline-heading-5">
@@ -198,6 +164,10 @@ export default function Direction() {
               <br />
               اعمال شرط ۳کارت برای خرید های بالا❖
             </div>
+            <div className="circel-8">
+              خرداد <br />
+              ۱۳۹۸
+            </div>{" "}
           </div>
           <div className="timeline-panel-2">
             <div className="timeline-heading-2">
@@ -214,6 +184,10 @@ export default function Direction() {
               <br />
               افزودن ۳ ارز به فهرست ارزهای بیت برگ❖
             </div>
+            <div className="circel-9">
+              خرداد <br />
+              ۱۳۹۸
+            </div>{" "}
           </div>
           <div className="timeline-panel">
             <div className="timeline-heading-3">
@@ -226,6 +200,10 @@ export default function Direction() {
               <br />
               تسویه حساب آنی سفارشات خرید و فروش❖
             </div>
+            <div className="circel-10">
+              خرداد <br />
+              ۱۳۹۸
+            </div>{" "}
           </div>
           <div className="timeline-panel-2">
             <div className="timeline-heading-4">
@@ -238,6 +216,10 @@ export default function Direction() {
               <br />
               امکان مشاهده ریز جزئیات سفارشات❖
             </div>
+            <div className="circel-11">
+              خرداد <br />
+              ۱۳۹۸
+            </div>{" "}
           </div>
           <div className="timeline-panel">
             <div className="timeline-heading-5">
@@ -248,6 +230,10 @@ export default function Direction() {
               <br />
               رفع برخی باگ های گزارش شده❖
             </div>
+            <div className="circel-12">
+              خرداد <br />
+              ۱۳۹۷
+            </div>{" "}
           </div>
           <div className="timeline-panel-2">
             <div className="timeline-heading-2">
@@ -258,6 +244,10 @@ export default function Direction() {
               <br />
               افزایش تعداد ارزها به ۱۵ ارز❖
             </div>
+            <div className="circel-13">
+              خرداد <br />
+              ۱۳۹۷
+            </div>{" "}
           </div>
           <div className="timeline-panel">
             <div className="timeline-heading-3">
@@ -270,6 +260,10 @@ export default function Direction() {
               <br />
               .اضافه شدن بخش تحلیل تکنیکال❖
             </div>
+            <div className="circel-14">
+              خرداد <br />
+              ۱۳۹۷
+            </div>{" "}
           </div>
           <div className="timeline-panel-2">
             <div className="timeline-heading-4">
@@ -277,6 +271,10 @@ export default function Direction() {
             </div>
             <div className="timeline-body-2">
               ❤راه اندازی سامانه خرید و فروش❖
+            </div>
+            <div className="circel-15">
+              خرداد <br />
+              ۱۳۹۷
             </div>
           </div>
         </div>

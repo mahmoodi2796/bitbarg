@@ -9,6 +9,7 @@ import Question from "./components/Question/Question.js";
 import Bag from "./components/Bag/Bag.js";
 import Direction from "./components/Direction/Direction.js";
 import Wallet from "./components/Wallet/Wallet.js";
+import About from "./components/About/About.js";
 import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/Bag" element={<Bag />} />
         <Route path="/Direction" element={<Direction />} />
         <Route path="/Wallet" element={<Wallet />} />
+        <Route path="/About" element={<About />} />
       </Routes>
       <div className="parent">
         <div className="golabi"></div>

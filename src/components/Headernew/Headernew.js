@@ -79,11 +79,12 @@ export default function Headernew({ namePage, namePagetwo, namePagethree }) {
                       <div>قیمت لحظه ای </div>
                     </div>
                   </a>
-
-                  <div className="container-bitgap">
-                    <img width="70px" src={bitgap} />
-                    <div>بیت گپ</div>
-                  </div>
+                  <a href="https://bitbarg.me/bitgap">
+                    <div className="container-bitgap">
+                      <img width="70px" src={bitgap} />
+                      <div>بیت گپ</div>
+                    </div>
+                  </a>
                   {namePagetwo != "mahdi" && (
                     <a className="item-hide-menu" href="Authentication">
                       <div className="container-Identity">
@@ -149,10 +150,12 @@ export default function Headernew({ namePage, namePagetwo, namePagethree }) {
                       <div>ارتباط با مدیریت</div>
                     </div>
                   </a>
-                  <div className="container-about">
-                    <img width="70px" height="70" src={about} />
-                    <div>درباره ما</div>
-                  </div>
+                  <a href="/About">
+                    <div className="container-about">
+                      <img width="70px" height="70" src={about} />
+                      <div>درباره ما</div>
+                    </div>
+                  </a>
                 </div>
               </>
             )}
