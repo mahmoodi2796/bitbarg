@@ -28,7 +28,7 @@ function App() {
         <Route path="/About" element={<About />} />
       </Routes>
       <div className="parent">
-        <div className="golabi"></div>
+        <div className="circle"></div>
         <img class="mehdi" src={support} />
       </div>
     </div>

@@ -62,8 +62,8 @@
 }
 .mehdi {
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   background-color: white;
   border-radius: 100%;
 }
@@ -74,21 +74,26 @@
   width: 10px;
   margin: 0 auto;
 }
-@keyframes blow {
-  0% {
-    background-color: #437dd3;
-    transform: scale(6);
-  }
-
-  100% {
-    transform: scale(10);
-  }
-}
 
 @media screen and (max-width: 576px) {
   .container-support-fix {
     left: 15px;
     bottom: 0px;
     position: fixed;
+  }
+}
+.circle {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: #ff6242;
+  animation: animate 1800ms infinite;
+}
+@keyframes animate {
+  0% {
+    box-shadow: #437dd3 0 0 0 0;
+  }
+  75% {
+    box-shadow: #fff 0 0 0 16px;
   }
 }
